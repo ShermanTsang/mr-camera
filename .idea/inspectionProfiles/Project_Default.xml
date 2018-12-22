@@ -1,0 +1,56 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CheckEmptyScriptTag" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Eslint" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="HtmlExtraClosingTag" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="24">
+            <item index="0" class="java.lang.String" itemvalue="@click" />
+            <item index="1" class="java.lang.String" itemvalue="@click.stop" />
+            <item index="2" class="java.lang.String" itemvalue="@click.prevent" />
+            <item index="3" class="java.lang.String" itemvalue="@input" />
+            <item index="4" class="java.lang.String" itemvalue="@change" />
+            <item index="5" class="java.lang.String" itemvalue="@focus" />
+            <item index="6" class="java.lang.String" itemvalue="@blur" />
+            <item index="7" class="java.lang.String" itemvalue="@keyup" />
+            <item index="8" class="java.lang.String" itemvalue="@submit" />
+            <item index="9" class="java.lang.String" itemvalue="@submit.prevent" />
+            <item index="10" class="java.lang.String" itemvalue=":disabled" />
+            <item index="11" class="java.lang.String" itemvalue=":class" />
+            <item index="12" class="java.lang.String" itemvalue=":style" />
+            <item index="13" class="java.lang.String" itemvalue=":value" />
+            <item index="14" class="java.lang.String" itemvalue=":readonly" />
+            <item index="15" class="java.lang.String" itemvalue=":disabled" />
+            <item index="16" class="java.lang.String" itemvalue=":title" />
+            <item index="17" class="java.lang.String" itemvalue=":for" />
+            <item index="18" class="java.lang.String" itemvalue=":tab-index" />
+            <item index="19" class="java.lang.String" itemvalue=":name" />
+            <item index="20" class="java.lang.String" itemvalue=":id" />
+            <item index="21" class="java.lang.String" itemvalue=":checked" />
+            <item index="22" class="java.lang.String" itemvalue="slot" />
+            <item index="23" class="java.lang.String" itemvalue="scoped" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="myValues">
+        <value>
+          <list size="6">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

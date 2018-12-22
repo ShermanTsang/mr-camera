@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7dc3095b-5074-4f92-9a00-cee47551015f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="camera-electron" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/renderer/pages/home.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="202" column="42" selection-start-line="202" selection-start-column="42" selection-end-line="202" selection-end-column="42" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#template#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#template#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Form#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#FormItem#0;n#Form#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#FormItem#1;n#Form#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#FormItem#2;n#Form#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Modal#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#FormItem#0;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#FormItem#1;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#FormItem#2;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>按键</find>
+      <find>Spa</find>
+      <find>&lt;pic</find>
+      <find>$theme</find>
+      <find>photoLi</find>
+      <find>projectList</find>
+      <find>projectLi</find>
+      <find>full</find>
+      <find>redirect</find>
+      <find>window-resize</find>
+      <find>ChildWindow</find>
+      <find>请选择</find>
+      <find>page</find>
+      <find>show-scroll</find>
+      <find>inset</find>
+      <find>selectProjectItem</find>
+      <find>editProjectItem</find>
+      <find>.8rem</find>
+      <find>.9rem</find>
+      <find>.85rem</find>
+      <find>scroll</find>
+      <find>.action-menu</find>
+      <find>新建</find>
+      <find>requestProjectList</find>
+      <find>requireProjectList</find>
+      <find>loadAlbumItem</find>
+      <find>requestObjectList</find>
+      <find>console.log</find>
+      <find>album-check</find>
+      <find>queryProjectCount</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>saved</replace>
+      <replace>shot</replace>
+      <replace>saveStatus</replace>
+      <replace>notUploadedList</replace>
+      <replace>getNotUploadedList</replace>
+      <replace>objectList</replace>
+      <replace>modifyName</replace>
+      <replace>project</replace>
+      <replace>redirectPage</replace>
+      <replace>photo-item</replace>
+      <replace>home</replace>
+      <replace>photo-item-image</replace>
+      <replace>$theme-color</replace>
+      <replace>photo-item-action</replace>
+      <replace>photoList</replace>
+      <replace>45px</replace>
+      <replace>相册</replace>
+      <replace>edit</replace>
+      <replace>Web</replace>
+      <replace>WebWindow</replace>
+      <replace>scrollable</replace>
+      <replace>loadAlbumItem</replace>
+      <replace>editAlbumItem</replace>
+      <replace>.9rem</replace>
+      <replace>.album-action</replace>
+      <replace>requireProjectList</replace>
+      <replace>queryProjectList</replace>
+      <replace>queryPhotoList</replace>
+      <replace>selectAlbumItem</replace>
+      <replace>album-tip</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/renderer/components/login.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/header.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/picLoader.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/assets/variable.scss" />
+        <option value="$PROJECT_DIR$/src/renderer/components/textBoard.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/tag.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/user-card.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/textTag.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/pic.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/orgTree.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/classTree.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/login.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/datastore.js" />
+        <option value="$PROJECT_DIR$/src/renderer/components/camrea.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/camera-student.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/camera-teacher.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/select-school.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/camera-gallery.vue" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/main/index.dev.js" />
+        <option value="$PROJECT_DIR$/src/renderer/components/userAvatar.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/userCard.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/main.js" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/dashboard.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/imageCard.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/router/index.js" />
+        <option value="$PROJECT_DIR$/src/renderer/assets/varibles.scss" />
+        <option value="$PROJECT_DIR$/src/renderer/assets/iview.less" />
+        <option value="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" />
+        <option value="$PROJECT_DIR$/src/renderer/assets/override.scss" />
+        <option value="$PROJECT_DIR$/src/renderer/components/panel.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/camera.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/headerBar.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/titleBoard.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/index.vue" />
+        <option value="$PROJECT_DIR$/src/main/index.js" />
+        <option value="$PROJECT_DIR$/src/renderer/App.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/workspace.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/album.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/home.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="400" />
+    <option name="y" value="245" />
+    <option name="width" value="1400" />
+    <option name="height" value="940" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>HtmlExtraClosingTag</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="renderer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="renderer" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="renderer" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="renderer" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="header&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/headerBar.vue&#10;less&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/assets/iview.less&#10;headerbar&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/headerBar.vue&#10;album&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/pages/album.vue&#10;work&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/pages/workspace.vue&#10;camera&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/camera.vue&#10;image&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/imageCard.vue&#10;ima&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/imageCard.vue&#10;app&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/App.vue&#10;cam&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/camera.vue&#10;main&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/main.js&#10;mai&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/main.js&#10;panel&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/panel.vue&#10;user&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/userAvatar.vue&#10;usercard&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/userCard.vue&#10;user-card&#9;null&#9;null&#10;userA&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/userAvatar.vue&#10;ava&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/userAvatar.vue&#10;pic&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/pic.vue&#10;tree&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/classTree.vue&#10;login&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/pages/login.vue&#10;class&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/classTree.vue&#10;text&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/textTag.vue&#10;over&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/assets/override.scss&#10;count&#9;null&#9;null&#10;appv&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/App.vue&#10;index&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/main/index.js&#10;use&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/user-card.vue&#10;title&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/titleBoard.vue&#10;ove&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/assets/override.scss&#10;pan&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/panel.vue&#10;pane&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/panel.vue" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.9.3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="D:\Workspace\Develop\Project\MrCamera\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="D:\Workspace\Develop\Project\MrCamera\node_modules\eslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\apps\WebStorm\ch-0\182.4129.32\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Project\ews-app\camera-electron\src" />
+      <recent name="F:\Project\ews-app\camera-electron\src\renderer\assets\images" />
+      <recent name="F:\Project\ews-app\camera-electron\src\renderer\pages" />
+      <recent name="F:\Project\ews-app\camera-electron\src\renderer\assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Develop\Project\MrCamera\src\renderer\assets\images" />
+      <recent name="D:\Workspace\Develop\Project\MrCamera\src\renderer\assets" />
+      <recent name="F:\Project\ews-app\camera-electron\src\renderer\pages" />
+      <recent name="F:\Project\ews-app\camera-electron\src\renderer\assets\images" />
+      <recent name="F:\Project\ews-app\camera-electron\src\renderer\components" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="DEV" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\小满\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7dc3095b-5074-4f92-9a00-cee47551015f" name="Default Changelist" comment="" />
+      <created>1539855795496</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539855795496</updated>
+      <workItem from="1539855796959" duration="846000" />
+      <workItem from="1539913577401" duration="22338000" />
+      <workItem from="1540171883000" duration="25813000" />
+      <workItem from="1540256912679" duration="27491000" />
+      <workItem from="1540343864691" duration="25686000" />
+      <workItem from="1540430612989" duration="26007000" />
+      <workItem from="1540460208122" duration="20000" />
+      <workItem from="1540461464060" duration="324000" />
+      <workItem from="1540517264349" duration="23610000" />
+      <workItem from="1540616761560" duration="522000" />
+      <workItem from="1540617362320" duration="23997000" />
+      <workItem from="1540687876552" duration="23963000" />
+      <workItem from="1540816339914" duration="10888000" />
+      <workItem from="1540907696808" duration="8337000" />
+      <workItem from="1541077701461" duration="6735000" />
+      <workItem from="1541299155035" duration="1387000" />
+      <workItem from="1541319230433" duration="12927000" />
+      <workItem from="1542118843951" duration="3518000" />
+      <workItem from="1543142690050" duration="4570000" />
+      <workItem from="1543306343341" duration="40000" />
+      <workItem from="1543538604553" duration="17149000" />
+      <workItem from="1543635775067" duration="1537000" />
+      <workItem from="1543661608817" duration="5526000" />
+      <workItem from="1543934382692" duration="666000" />
+      <workItem from="1544095763289" duration="2913000" />
+      <workItem from="1544145462178" duration="956000" />
+      <workItem from="1544155537592" duration="4386000" />
+      <workItem from="1544172784004" duration="1931000" />
+      <workItem from="1544175379713" duration="5879000" />
+      <workItem from="1544240032116" duration="7829000" />
+      <workItem from="1544279411622" duration="1002000" />
+      <workItem from="1544320586898" duration="1451000" />
+      <workItem from="1544328620370" duration="4334000" />
+      <workItem from="1544514634519" duration="12982000" />
+      <workItem from="1544707965434" duration="2013000" />
+      <workItem from="1544776470070" duration="13370000" />
+      <workItem from="1544872780577" duration="7471000" />
+      <workItem from="1544927354219" duration="3816000" />
+      <workItem from="1545053954629" duration="3640000" />
+      <workItem from="1545058131682" duration="3206000" />
+      <workItem from="1545143679281" duration="3842000" />
+      <workItem from="1545148740712" duration="2720000" />
+      <workItem from="1545234024250" duration="139000" />
+      <workItem from="1545234737914" duration="1940000" />
+      <workItem from="1545467619426" duration="546000" />
+    </task>
+    <task id="LOCAL-00001" summary="eCamera&#10;1,新增 拍照逻辑静态页面 包括登陆、选择学校、选择班级;&#10;2,新增 一系列组件 服务于学拓帮工具应用.&#10;&#10;eMaster-client&#10;1,优化 loader页面 混乱的层级通过骚操作解决;">
+      <created>1539943555084</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539943555084</updated>
+    </task>
+    <task id="LOCAL-00002" summary="eCamera&#10;1,完善 拍照页面 摄像头相关逻辑;&#10;2,解决 部分页面 bugs.">
+      <created>1540202589027</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540202589027</updated>
+    </task>
+    <task id="LOCAL-00003" summary="eCamera&#10;1,修复 登陆后窗口大小 出现位置不合理的问题;&#10;2,优化 主窗口尺寸 根据用户屏幕大小做相应调整;&#10;3,新增 包moe-plus 基础配置的完成和登陆接口对接;&#10;4,完善 头像采集 页面的相关功能.">
+      <created>1540288918366</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540288918366</updated>
+    </task>
+    <task id="LOCAL-00004" summary="eCamera&#10;1,对接 基础接口;&#10;2,优化 界面层级;&#10;3,完善 业务细节.">
+      <created>1540375398084</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540375398084</updated>
+    </task>
+    <task id="LOCAL-00005" summary="eCamera&#10;1,新增 教师图像采集页面;&#10;2,对接 教师图像采集页面;&#10;3,新增 user-avatar组件 用于用户头像的展示;&#10;4,完善 翻页组件 接口对接和逻辑编写;&#10;5,优化 登陆页面 扫码登陆UI效果.&#10;&#10;eWeb-app&#10;1,优化 扫码登陆请求与确认页面 UI效果.">
+      <created>1540461544853</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540461544853</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1,[new]项目选择页、拍摄页基础结构完善.">
+      <created>1540742335931</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1540742335931</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1,[Fix]项目bugs修复.">
+      <created>1540829854930</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1540829854930</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1,[Daily]日常提交.">
+      <created>1541087901235</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1541087901235</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1,新增 第二期成语竞赛活动 静态页面;">
+      <created>1545467737892</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545467737892</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="360263000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5642136" visible="true" weight="0.18025182" />
+      <window_info id="Structure" order="1" sideWeight="0.43578643" side_tool="true" weight="0.15639496" />
+      <window_info id="npm" order="2" sideWeight="0.5077951" side_tool="true" weight="0.15697674" />
+      <window_info id="Favorites" order="3" sideWeight="0.5077951" side_tool="true" weight="0.15697674" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3266187" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32756132" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="eCamera&#10;1,新增 拍照逻辑静态页面 包括登陆、选择学校、选择班级;&#10;2,新增 一系列组件 服务于学拓帮工具应用.&#10;&#10;eMaster-client&#10;1,优化 loader页面 混乱的层级通过骚操作解决;" />
+    <MESSAGE value="eCamera&#10;1,完善 拍照页面 摄像头相关逻辑;&#10;2,解决 部分页面 bugs." />
+    <MESSAGE value="eCamera&#10;1,修复 登陆后窗口大小 出现位置不合理的问题;&#10;2,优化 主窗口尺寸 根据用户屏幕大小做相应调整;&#10;3,新增 包moe-plus 基础配置的完成和登陆接口对接;&#10;4,完善 头像采集 页面的相关功能." />
+    <MESSAGE value="eCamera&#10;1,对接 基础接口;&#10;2,优化 界面层级;&#10;3,完善 业务细节." />
+    <MESSAGE value="eCamera&#10;1,新增 教师图像采集页面;&#10;2,对接 教师图像采集页面;&#10;3,新增 user-avatar组件 用于用户头像的展示;&#10;4,完善 翻页组件 接口对接和逻辑编写;&#10;5,优化 登陆页面 扫码登陆UI效果.&#10;&#10;eWeb-app&#10;1,优化 扫码登陆请求与确认页面 UI效果." />
+    <MESSAGE value="1,[new]项目选择页、拍摄页基础结构完善." />
+    <MESSAGE value="1,[Fix]项目bugs修复." />
+    <MESSAGE value="1,[Daily]日常提交." />
+    <MESSAGE value="1,新增 第二期成语竞赛活动 静态页面;" />
+    <option name="LAST_COMMIT_MESSAGE" value="1,新增 第二期成语竞赛活动 静态页面;" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/variable.scss" />
+    <entry file="file://$PROJECT_DIR$/src/index.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/app.dev.js" />
+    <entry file="file://$PROJECT_DIR$/src/config/app.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/electron/electron.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="2882" column="12" selection-start-line="2882" selection-start-column="12" selection-end-line="2882" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main.js" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/textTag.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/moe-plus/src/components/camera.js" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/avatar.vue" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/images/avatar/maleTeacher.png" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/images/avatar/femaleTeacher.png" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/pic.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-589">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/groupTree.vue" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/orgTree.vue" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/classTree.vue" />
+    <entry file="file://$PROJECT_DIR$/node_modules/iview/src/components/tag/tag.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/pages/camera-teacher1.vue" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/pages/camera-teacher.vue" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/images/avatar/default.png" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/userAvatar.vue" />
+    <entry file="file://$PROJECT_DIR$/node_modules/_electron@2.0.12@electron/electron.d.ts" />
+    <entry file="file://$PROJECT_DIR$/.eslintignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/datastore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/imageCard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-529">
+          <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/index.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4800" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.electron-vue/webpack.main.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.electron-vue/webpack.web.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1570">
+          <caret line="70" column="8" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/iview/src/styles/index.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/iview.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/variables.scss" />
+    <entry file="file://$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/override.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="182" column="20" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EwsAppV2/camera-electron/src/main/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="e#891#1053#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/images/slide1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/images/slide2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/images/slide3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/panel.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="e#250#281#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/headerBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#Modal#0;n#header#0;n#template#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#Modal#0;n#header#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/camera.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#!!top" />
+            <element signature="n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#vueCropper#0;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/titleBoard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1000">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding>
+            <element signature="e#771#3167#0" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+          <folding>
+            <element signature="e#128#218#0" />
+            <element signature="e#397#514#0" />
+            <element signature="e#551#613#0" />
+            <element signature="e#590#611#0" />
+            <element signature="e#641#701#0" />
+            <element signature="e#670#699#0" />
+            <element signature="e#775#883#0" />
+            <element signature="e#809#843#0" />
+            <element signature="e#849#881#0" />
+            <element signature="n#!!block;n#createWebWindow#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/pages/workspace.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="198" column="9" lean-forward="true" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/pages/album.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="104" column="32" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
+          <folding>
+            <element signature="e#292#701#0" />
+            <element signature="e#719#2184#0" />
+            <element signature="n#panel#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#title-board#0;n#panel#0;n#div#0;n#Col#0;n#Row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#panel#0;n#div#0;n#Col#0;n#Row#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="e#4465#4610#0" />
+            <element signature="e#4817#5007#0" />
+            <element signature="e#5032#5075#0" />
+            <element signature="e#5108#5366#0" />
+            <element signature="e#5400#5667#0" />
+            <element signature="e#5702#5710#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/pages/home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="202" column="42" selection-start-line="202" selection-start-column="42" selection-end-line="202" selection-end-column="42" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#template#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#template#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Form#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#FormItem#0;n#Form#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#FormItem#1;n#Form#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#FormItem#2;n#Form#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Modal#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#FormItem#0;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#FormItem#1;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#FormItem#2;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,210 @@
+// 覆盖iView样式
+
+.ivu-layout {
+  height: 100vh;
+}
+
+.ivu-row-flex {
+  width: 100%;
+}
+
+.ivu-layout-sider {
+
+  .ivu-menu-item, .ivu-menu-submenu-title {
+    padding: 20px 10px;
+  }
+
+  .ivu-menu-item-selected {
+    border-left: none;
+    color: #fff !important;
+
+    &:hover {
+      color: #2b85e4 !important;
+    }
+  }
+
+  .ivu-menu-item-active {
+    color: #fff !important;
+
+    &:hover {
+      color: #fff !important;
+    }
+  }
+
+  .ivu-menu-child-item-active {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 2px;
+      background-color: #e09200;
+    }
+  }
+}
+
+.ivu-layout-header {
+  background: $theme-color;
+  padding: 0;
+  position: relative;
+}
+
+.ivu-card-head {
+  p {
+    font-weight: normal;
+    font-size: 1rem;
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.ivu-form-item {
+  .ivu-form-item-label {
+    font-size: .9rem !important;
+    letter-spacing: 1px;
+    font-weight: normal;
+  }
+
+  label {
+    font-weight: normal;
+  }
+}
+
+.ivu-table-row {
+  td {
+    position: relative;
+  }
+}
+
+.ivu-table-cell {
+  padding: 10px;
+
+  span {
+    font-weight: normal;
+    font-size: .9rem;
+  }
+
+  .ivu-table-cell-hidden {
+    transform: translateY(40px);
+  }
+
+  &:hover {
+    .ivu-table-cell-hidden {
+      transform: none;
+    }
+  }
+}
+
+.ivu-table {
+  th {
+    cursor: default;
+    color: #4e8cfe;
+    background: white;
+    border-bottom: 2px solid #4e8cfe;
+
+    span {
+      white-space: nowrap;
+      letter-spacing: 1px;
+      font-size: .9rem;
+    }
+  }
+}
+
+.ivu-steps-title {
+  font-weight: normal !important;
+  font-size: .9rem;
+}
+
+.ivu-btn {
+  letter-spacing: 1px;
+  font-size: .9rem;
+  font-weight: normal;
+
+  i {
+    font-size: 17px;
+    vertical-align: middle;
+  }
+}
+
+.ivu-btn-dashed {
+  border: 2px dashed rgba(143, 184, 255, 0.5);
+  box-shadow: none;
+}
+
+.ivu-avatar {
+  img {
+    object-fit: cover;
+  }
+
+  .ivu-avatar-string {
+    left: calc(50% - 5px) !important;
+  }
+}
+
+.ivu-drawer {
+  .ivu-drawer-content {
+    .ivu-drawer-header-inner {
+      font-weight: normal;
+      letter-spacing: 1px;
+      font-size: 1rem;
+    }
+
+    .ivu-drawer-body {
+      .ivu-drawer-footer {
+        width: 100%;
+        border-top: 1px solid #e8e8e8;
+        padding: 10px 16px;
+        text-align: right;
+        background: #fff;
+      }
+    }
+  }
+}
+
+.ivu-modal {
+
+  .ivu-modal-confirm-head-title {
+    font-weight: normal !important;
+  }
+
+  .ivu-modal-header {
+    .ivu-modal-header-inner {
+      color: #333;
+      letter-spacing: 1px;
+      font-size: 1.1rem !important;
+      font-weight: normal !important;
+    }
+  }
+
+  .ivu-modal-content {
+    border-radius:0;
+    .ivu-modal-close {
+      i {
+        color: #999999;
+      }
+    }
+  }
+}
+
+.ivu-poptip-inner {
+  text-align: left !important;
+}
+
+.vertical-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ivu-modal {
+    top: 0;
+  }
+}
+
+.ivu-divider-horizontal {
+  margin: 6px 0 !important;
+  color: #999 !important;
+  font-size: .7rem !important;
+}
