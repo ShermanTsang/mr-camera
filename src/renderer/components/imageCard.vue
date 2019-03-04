@@ -18,11 +18,8 @@
                 height: 60px;
                 overflow: hidden;
                 text-align: center;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+                background-position: center !important;
+                background-size:cover !important;
             }
             .image-card-content {
                 margin-left: 10px;
@@ -61,9 +58,8 @@
 <template>
     <div class="image-card-container" :class="{'image-card-active':this.active}">
         <div class="image-card-body">
-            <div class="image-card-image">
-                <Poptip v-if="photo !== ''" trigger="hover" :transfer="true">
-                    <img :src="photo">
+            <div class="image-card-image" :style="{background:'url('+photo+')'}">
+                <Poptip v-if="photo !== ''" trigger="hover" :transfer="true" style="width: 100%;height: 100%;">
                     <div slot="content">
                         <img :src="photo"
                              :style="{minHeight: '100px',maxHeight: '180px',boxShadow: '0 0 10px rgba(0,0,0,.2)',borderRadius: '2px'}">

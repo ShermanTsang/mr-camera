@@ -1,6 +1,6 @@
 <style scoped rel="stylesheet/scss" lang="scss">
     .panel-container {
-        box-shadow: 0 2px 6px rgba(177, 177, 177, .4);
+        box-shadow: 0 2px 10px rgba(177, 177, 177, .4);
         background-color: #ffffff;
         border-radius: 2px;
         cursor: default;

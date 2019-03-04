@@ -10,13 +10,14 @@
             position: fixed;
             width: 100%;
             top: 0;
-            height: 40px;
+            height: 50px;
             z-index: 10000;
             margin-bottom: 10px;
-            box-shadow: 0 4px 8px rgba(177, 177, 177, 0.2);
+            box-shadow: 0 2px 8px rgba(177, 177, 177, 0.2);
             border-bottom: 2px solid #eee;
             -webkit-app-region: drag;
             background: #ffffff;
+            overflow: hidden;
 
             .header-band {
                 letter-spacing: 1px;
@@ -26,9 +27,8 @@
 
             .header-action-item {
                 -webkit-app-region: no-drag !important;
-                display: inline;
-                height: 100%;
-                padding: 10px;
+                display: inline-block;
+                padding: 10px 15px;
                 font-size: 1.2rem;
                 transition: all 200ms ease-in;
                 color: #999999;
@@ -81,6 +81,9 @@
                 相机先生
             </div>
             <div class="header-action">
+                <div class="header-action-item" @click="windowsAction('pin')">
+                    <Icon type="ios-link"/>
+                </div>
                 <div class="header-action-item" @click="windowsAction('min')">
                     <Icon type="md-remove"/>
                 </div>
@@ -119,7 +122,7 @@
                     </div>
                     <div class="setting-item-name">升级检测</div>
                 </div>
-                <div class="setting-item">
+                <div class="setting-item" @click="emptyAllData()">
                     <div class="setting-item-icon">
                         <Icon type="ios-trash-outline"/>
                     </div>
@@ -155,11 +158,33 @@ export default {
         });
         return false;
       }
+      if (type === 'pin') {
+        this.$electron.ipcRenderer.send('pin');
+        this.$Message.info('窗口已置顶');
+        return false;
+      }
       if (type === 'back') {
         this.$router.back(-1);
         return false;
       }
       this.$electron.ipcRenderer.send(type);
+    },
+    emptyAllData() {
+      this.$Modal.confirm({
+        title: '确认清空所有数据吗？',
+        content: '未保存到本地的图片和相册将全被删除',
+        onOk: () => {
+          this.$db.remove({}, { multi: true }, (err, numRemoved) => {
+            if (err) {
+              console.log(err);
+            }
+            this.$Message.success(`${numRemoved}条数据已经全部清空`);
+          });
+        },
+        onCancel: () => {
+          this.$Message.info('已取消清空数据');
+        }
+      });
     }
   },
   mounted() {

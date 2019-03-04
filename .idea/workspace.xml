@@ -2,7 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dc3095b-5074-4f92-9a00-cee47551015f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/zengx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/icon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/actionButtonContainer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/actionButtonItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/assets/images/qrCode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/assets/override.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/assets/override.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/camera.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/camera.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/headerBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/headerBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/imageCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/imageCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/panel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/panel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/pic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/pic.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/titleBoard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/titleBoard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/pages/album.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/pages/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/pages/workspace.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/pages/workspace.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,12 +46,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderer/components/camera.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#style#0;n#canvas#0;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#canvas#1;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderer/pages/workspace.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="242" column="67" selection-start-line="242" selection-start-column="67" selection-end-line="242" selection-end-column="67" />
+              <folding>
+                <element signature="e#39#323#0" />
+                <element signature="e#346#743#0" />
+                <element signature="n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#title-board#0;n#div#0;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#action-button-container#0;n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#action-button-item#0;n#action-button-container#0;n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#camera#0;n#div#1;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#title-board#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#span#0;n#title-board#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#Button#0;n#span#0;n#title-board#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#Alert#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#template#0;n#Alert#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#Tag#2;n#div#0;n#image-card#0;n#div#0;n#div#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/renderer/pages/home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="202" column="42" selection-start-line="202" selection-start-column="42" selection-end-line="202" selection-end-column="42" />
+            <state relative-caret-position="-517">
+              <caret line="366" column="77" selection-start-line="366" selection-start-column="77" selection-end-line="366" selection-end-column="77" />
               <folding>
+                <element signature="e#137#2789#0" />
+                <element signature="e#318#908#0" />
+                <element signature="e#543#894#0" />
+                <element signature="e#936#1407#0" />
+                <element signature="e#1307#1393#0" />
+                <element signature="e#1433#2779#0" />
+                <element signature="e#1525#2377#0" />
+                <element signature="e#1928#2006#0" />
+                <element signature="e#2035#2099#0" />
+                <element signature="e#2128#2235#0" />
+                <element signature="e#2265#2359#0" />
+                <element signature="e#2414#2765#0" />
+                <element signature="e#2812#7799#0" />
+                <element signature="e#2899#3599#0" />
+                <element signature="e#3260#3584#0" />
+                <element signature="e#3325#3566#0" />
+                <element signature="e#3624#4277#0" />
+                <element signature="e#3901#4263#0" />
+                <element signature="e#4303#7789#0" />
+                <element signature="e#4485#7545#0" />
+                <element signature="e#4629#6644#0" />
+                <element signature="e#4818#5161#0" />
+                <element signature="e#5195#5576#0" />
+                <element signature="e#5313#5550#0" />
+                <element signature="e#5611#6621#0" />
+                <element signature="e#6269#6484#0" />
+                <element signature="e#6311#6454#0" />
+                <element signature="e#6516#6595#0" />
+                <element signature="e#6673#6957#0" />
+                <element signature="e#6987#7527#0" />
+                <element signature="e#7109#7178#0" />
+                <element signature="e#7227#7374#0" />
+                <element signature="e#7261#7348#0" />
+                <element signature="e#7424#7505#0" />
+                <element signature="e#7581#7774#0" />
+                <element signature="e#7688#7756#0" />
+                <element signature="e#8349#9189#0" />
+                <element signature="e#8550#8751#0" />
+                <element signature="e#8776#9175#0" />
+                <element signature="e#8915#9157#0" />
+                <element signature="e#9212#9293#0" />
+                <element signature="e#9315#9521#0" />
+                <element signature="e#9451#9507#0" />
                 <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#0;n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
@@ -35,9 +147,31 @@
                 <element signature="n#div#0;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#template#0;n#div#1;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#0;n#template#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#template#0;n#div#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Page#0;n#div#1;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#action-button-item#0;n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#action-button-item#1;n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#action-button-item#2;n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Poptip#0;n#div#0;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#Poptip#0;n#div#0;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#img#0;n#div#0;n#Poptip#0;n#div#0;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#p#0;n#div#1;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Slider#0;n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#Modal#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#Form#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#FormItem#0;n#Form#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
@@ -48,6 +182,85 @@
                 <element signature="n#FormItem#0;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#FormItem#1;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#FormItem#2;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="e#17647#18460#0" />
+                <element signature="e#17660#18455#0" />
+                <element signature="e#17676#17812#0" />
+                <element signature="e#17828#17864#0" />
+                <element signature="e#17878#17993#0" />
+                <element signature="e#18007#18293#0" />
+                <element signature="e#18037#18071#0" />
+                <element signature="e#18098#18179#0" />
+                <element signature="e#18204#18285#0" />
+                <element signature="e#18309#18430#0" />
+                <element signature="e#18346#18422#0" />
+                <element signature="e#18506#18646#0" />
+                <element signature="e#18673#18790#0" />
+                <element signature="e#18823#18865#0" />
+                <element signature="e#18889#18938#0" />
+                <element signature="e#18969#19059#0" />
+                <element signature="e#19084#19130#0" />
+                <element signature="e#19163#19417#0" />
+                <element signature="e#19281#19409#0" />
+                <element signature="e#19451#19754#0" />
+                <element signature="e#19505#19589#0" />
+                <element signature="e#19640#19746#0" />
+                <element signature="e#19659#19698#0" />
+                <element signature="e#19789#20213#0" />
+                <element signature="e#20243#20658#0" />
+                <element signature="e#20343#20471#0" />
+                <element signature="e#20515#20650#0" />
+                <element signature="e#20686#21056#0" />
+                <element signature="e#20810#20863#0" />
+                <element signature="e#20875#21048#0" />
+                <element signature="e#21085#21173#0" />
+                <element signature="e#21196#21566#0" />
+                <element signature="e#21402#21558#0" />
+                <element signature="e#21421#21460#0" />
+                <element signature="e#21589#22280#0" />
+                <element signature="e#21839#21975#0" />
+                <element signature="e#21858#21897#0" />
+                <element signature="e#21998#22054#0" />
+                <element signature="e#22142#22181#0" />
+                <element signature="e#22313#23019#0" />
+                <element signature="e#22377#23011#0" />
+                <element signature="e#22468#22925#0" />
+                <element signature="e#22533#22913#0" />
+                <element signature="e#22621#22899#0" />
+                <element signature="e#22646#22697#0" />
+                <element signature="e#22951#23003#0" />
+                <element signature="e#23052#23125#0" />
+                <element signature="e#23225#23431#0" />
+                <element signature="e#23320#23423#0" />
+                <element signature="e#23339#23378#0" />
+                <element signature="e#23551#23684#0" />
+                <element signature="e#23621#23671#0" />
+                <element signature="e#23714#23750#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="67" column="3" lean-forward="true" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+              <folding>
+                <element signature="e#15#88#0" expanded="true" />
+                <element signature="n#!!block;n#createWebWindow#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderer/components/headerBar.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="160" column="27" lean-forward="true" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#Modal#0;n#header#0;n#template#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#Modal#0;n#header#0;n#template#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -65,69 +278,72 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>按键</find>
-      <find>Spa</find>
-      <find>&lt;pic</find>
-      <find>$theme</find>
-      <find>photoLi</find>
-      <find>projectList</find>
-      <find>projectLi</find>
-      <find>full</find>
-      <find>redirect</find>
-      <find>window-resize</find>
-      <find>ChildWindow</find>
-      <find>请选择</find>
-      <find>page</find>
-      <find>show-scroll</find>
-      <find>inset</find>
-      <find>selectProjectItem</find>
-      <find>editProjectItem</find>
-      <find>.8rem</find>
-      <find>.9rem</find>
-      <find>.85rem</find>
-      <find>scroll</find>
-      <find>.action-menu</find>
-      <find>新建</find>
-      <find>requestProjectList</find>
-      <find>requireProjectList</find>
-      <find>loadAlbumItem</find>
-      <find>requestObjectList</find>
-      <find>console.log</find>
-      <find>album-check</find>
-      <find>queryProjectCount</find>
+      <find>step</find>
+      <find>result-image</find>
+      <find>timer</find>
+      <find>emit</find>
+      <find>confirm</find>
+      <find>type</find>
+      <find>confirmCropper</find>
+      <find>cropper</find>
+      <find>resultPhotoPNG</find>
+      <find>download</find>
+      <find>confirmLink</find>
+      <find>outputType</find>
+      <find>jpg</find>
+      <find>this.$db</find>
+      <find>project</find>
+      <find>Project</find>
+      <find>direct</find>
+      <find>albumList</find>
+      <find>this.$Message</find>
+      <find>status.page</find>
+      <find>error</find>
+      <find>this.$db.find({</find>
+      <find>create</find>
+      <find>name</find>
+      <find>photo-item</find>
+      <find>:class=&quot;</find>
+      <find>undefined</find>
+      <find>未命名</find>
+      <find>unde</find>
+      <find>加载中</find>
     </findStrings>
     <replaceStrings>
-      <replace>saved</replace>
-      <replace>shot</replace>
-      <replace>saveStatus</replace>
-      <replace>notUploadedList</replace>
-      <replace>getNotUploadedList</replace>
-      <replace>objectList</replace>
-      <replace>modifyName</replace>
-      <replace>project</replace>
-      <replace>redirectPage</replace>
-      <replace>photo-item</replace>
-      <replace>home</replace>
-      <replace>photo-item-image</replace>
-      <replace>$theme-color</replace>
-      <replace>photo-item-action</replace>
-      <replace>photoList</replace>
-      <replace>45px</replace>
-      <replace>相册</replace>
-      <replace>edit</replace>
-      <replace>Web</replace>
-      <replace>WebWindow</replace>
-      <replace>scrollable</replace>
-      <replace>loadAlbumItem</replace>
-      <replace>editAlbumItem</replace>
-      <replace>.9rem</replace>
-      <replace>.album-action</replace>
-      <replace>requireProjectList</replace>
-      <replace>queryProjectList</replace>
-      <replace>queryPhotoList</replace>
       <replace>selectAlbumItem</replace>
       <replace>album-tip</replace>
+      <replace>album-tool</replace>
+      <replace>photoItemZoom</replace>
+      <replace>photoItemSize</replace>
+      <replace>quit</replace>
+      <replace>action-button</replace>
+      <replace>album</replace>
+      <replace>`image/${camera.outputType}`</replace>
+      <replace>`image/${this.camera.outputType}`</replace>
+      <replace>runCamera</replace>
+      <replace>preview</replace>
+      <replace>comfirm</replace>
+      <replace>confirm</replace>
+      <replace>format</replace>
+      <replace>config.mode</replace>
+      <replace>cropper</replace>
+      <replace>shotCheck</replace>
+      <replace>result</replace>
+      <replace>unsave</replace>
+      <replace>NotSaved</replace>
+      <replace>this.config.format</replace>
+      <replace>checkObject</replace>
+      <replace>downloadImage</replace>
+      <replace>captureCropper</replace>
+      <replace>Album</replace>
+      <replace>jpeg</replace>
+      <replace>Albu</replace>
+      <replace>params.page</replace>
+      <replace>err</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>E:\Develop\Project\MrCamera\src\renderer</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -157,58 +373,44 @@
         <option value="$PROJECT_DIR$/src/main/index.dev.js" />
         <option value="$PROJECT_DIR$/src/renderer/components/userAvatar.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/userCard.vue" />
-        <option value="$PROJECT_DIR$/src/renderer/main.js" />
         <option value="$PROJECT_DIR$/src/renderer/pages/dashboard.vue" />
-        <option value="$PROJECT_DIR$/src/renderer/components/imageCard.vue" />
-        <option value="$PROJECT_DIR$/src/renderer/router/index.js" />
         <option value="$PROJECT_DIR$/src/renderer/assets/varibles.scss" />
         <option value="$PROJECT_DIR$/src/renderer/assets/iview.less" />
         <option value="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" />
-        <option value="$PROJECT_DIR$/src/renderer/assets/override.scss" />
-        <option value="$PROJECT_DIR$/src/renderer/components/panel.vue" />
-        <option value="$PROJECT_DIR$/src/renderer/components/camera.vue" />
-        <option value="$PROJECT_DIR$/src/renderer/components/headerBar.vue" />
-        <option value="$PROJECT_DIR$/src/renderer/components/titleBoard.vue" />
         <option value="$PROJECT_DIR$/src/renderer/pages/index.vue" />
-        <option value="$PROJECT_DIR$/src/main/index.js" />
-        <option value="$PROJECT_DIR$/src/renderer/App.vue" />
-        <option value="$PROJECT_DIR$/src/renderer/pages/workspace.vue" />
         <option value="$PROJECT_DIR$/src/renderer/pages/album.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/App.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/router/index.js" />
+        <option value="$PROJECT_DIR$/src/renderer/components/album.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/panel.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/actionButtonContainer.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/actionButton.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/actionButtonItem.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/imageCard.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/titleBoard.vue" />
+        <option value="$PROJECT_DIR$/src/index.ejs" />
+        <option value="$PROJECT_DIR$/src/renderer/assets/override.scss" />
+        <option value="$PROJECT_DIR$/src/renderer/components/camera.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/main.js" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/workspace.vue" />
+        <option value="$PROJECT_DIR$/.eslintrc.js" />
         <option value="$PROJECT_DIR$/src/renderer/pages/home.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/headerBar.vue" />
+        <option value="$PROJECT_DIR$/src/main/index.js" />
       </list>
     </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="400" />
     <option name="y" value="245" />
     <option name="width" value="1400" />
     <option name="height" value="940" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State />
-          <State>
-            <id>Code style issuesJavaScript</id>
-          </State>
-          <State>
-            <id>HTML</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>XML</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>HtmlExtraClosingTag</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -247,22 +449,12 @@
               <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="renderer" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -274,34 +466,36 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="header&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/headerBar.vue&#10;less&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/assets/iview.less&#10;headerbar&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/headerBar.vue&#10;album&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/pages/album.vue&#10;work&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/pages/workspace.vue&#10;camera&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/camera.vue&#10;image&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/imageCard.vue&#10;ima&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/imageCard.vue&#10;app&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/App.vue&#10;cam&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/camera.vue&#10;main&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/main.js&#10;mai&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/main.js&#10;panel&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/panel.vue&#10;user&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/userAvatar.vue&#10;usercard&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/userCard.vue&#10;user-card&#9;null&#9;null&#10;userA&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/userAvatar.vue&#10;ava&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/userAvatar.vue&#10;pic&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/pic.vue&#10;tree&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/classTree.vue&#10;login&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/pages/login.vue&#10;class&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/classTree.vue&#10;text&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/textTag.vue&#10;over&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/assets/override.scss&#10;count&#9;null&#9;null&#10;appv&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/App.vue&#10;index&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/main/index.js&#10;use&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/user-card.vue&#10;title&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/titleBoard.vue&#10;ove&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/assets/override.scss&#10;pan&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/panel.vue&#10;pane&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/panel.vue" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="8.9.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.0" />
+    <property name="last_opened_file_path" value="D:/SDK/Nodejs/node.exe" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="D:\Workspace\Develop\Project\MrCamera\node_modules\eslint" />
-    <property name="node.js.selected.package.standard" value="D:\Workspace\Develop\Project\MrCamera\node_modules\eslint" />
+    <property name="node.js.selected.package.eslint" value="E:\Develop\Project\MrCamera\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="E:\Develop\Project\MrCamera\node_modules\eslint" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\apps\WebStorm\ch-0\182.4129.32\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Develop\Project\MrCamera\src\main\resource" />
+      <recent name="E:\Develop\Project\MrCamera\static" />
+      <recent name="E:\Develop\Project\MrCamera\src\renderer\assets\images" />
       <recent name="F:\Project\ews-app\camera-electron\src" />
       <recent name="F:\Project\ews-app\camera-electron\src\renderer\assets\images" />
-      <recent name="F:\Project\ews-app\camera-electron\src\renderer\pages" />
-      <recent name="F:\Project\ews-app\camera-electron\src\renderer\assets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Develop\Project\MrCamera\src\renderer\components" />
+      <recent name="E:\Develop\Project\MrCamera\static" />
       <recent name="D:\Workspace\Develop\Project\MrCamera\src\renderer\assets\images" />
       <recent name="D:\Workspace\Develop\Project\MrCamera\src\renderer\assets" />
       <recent name="F:\Project\ews-app\camera-electron\src\renderer\pages" />
-      <recent name="F:\Project\ews-app\camera-electron\src\renderer\assets\images" />
-      <recent name="F:\Project\ews-app\camera-electron\src\renderer\components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -383,6 +577,33 @@
       <workItem from="1545234024250" duration="139000" />
       <workItem from="1545234737914" duration="1940000" />
       <workItem from="1545467619426" duration="546000" />
+      <workItem from="1545665588305" duration="2367000" />
+      <workItem from="1545751124149" duration="1282000" />
+      <workItem from="1547466376568" duration="868000" />
+      <workItem from="1547467341818" duration="347000" />
+      <workItem from="1547653957220" duration="920000" />
+      <workItem from="1550307838588" duration="5373000" />
+      <workItem from="1550397634449" duration="9469000" />
+      <workItem from="1550458753331" duration="6258000" />
+      <workItem from="1550481573241" duration="9601000" />
+      <workItem from="1550571587951" duration="5346000" />
+      <workItem from="1550629877971" duration="17125000" />
+      <workItem from="1550675975526" duration="1665000" />
+      <workItem from="1550715463147" duration="16005000" />
+      <workItem from="1550804877015" duration="22631000" />
+      <workItem from="1550891454945" duration="7216000" />
+      <workItem from="1550984453269" duration="3363000" />
+      <workItem from="1551094305235" duration="4881000" />
+      <workItem from="1551191053430" duration="1393000" />
+      <workItem from="1551269842419" duration="2647000" />
+      <workItem from="1551277284716" duration="1929000" />
+      <workItem from="1551408166661" duration="13971000" />
+      <workItem from="1551530104887" duration="4066000" />
+      <workItem from="1551611764484" duration="3204000" />
+      <workItem from="1551666127472" duration="6897000" />
+      <workItem from="1551685543900" duration="1785000" />
+      <workItem from="1551687420327" duration="3808000" />
+      <workItem from="1551691822102" duration="3689000" />
     </task>
     <task id="LOCAL-00001" summary="eCamera&#10;1,新增 拍照逻辑静态页面 包括登陆、选择学校、选择班级;&#10;2,新增 一系列组件 服务于学拓帮工具应用.&#10;&#10;eMaster-client&#10;1,优化 loader页面 混乱的层级通过骚操作解决;">
       <created>1539943555084</created>
@@ -451,7 +672,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360263000" />
+    <option name="totallyTimeSpent" value="518369000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,23 +685,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5642136" visible="true" weight="0.18025182" />
-      <window_info id="Structure" order="1" sideWeight="0.43578643" side_tool="true" weight="0.15639496" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49255952" visible="true" weight="0.17760105" />
+      <window_info id="Structure" order="1" sideWeight="0.50744045" side_tool="true" weight="0.17760105" />
       <window_info id="npm" order="2" sideWeight="0.5077951" side_tool="true" weight="0.15697674" />
-      <window_info id="Favorites" order="3" sideWeight="0.5077951" side_tool="true" weight="0.15697674" />
+      <window_info id="Favorites" order="3" sideWeight="0.47619048" side_tool="true" weight="0.17760105" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49966866" weight="0.4330357" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3266187" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32756132" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32589287" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50033134" side_tool="true" weight="0.4330357" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32738096" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -506,31 +726,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="1,新增 第二期成语竞赛活动 静态页面;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/renderer/assets/variable.scss" />
-    <entry file="file://$PROJECT_DIR$/src/index.ejs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/app.dev.js" />
-    <entry file="file://$PROJECT_DIR$/src/config/app.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/electron/electron.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="2882" column="12" selection-start-line="2882" selection-start-column="12" selection-end-line="2882" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/main.js" />
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/textTag.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/moe-plus/src/components/camera.js" />
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/avatar.vue" />
-    <entry file="file://$PROJECT_DIR$/src/renderer/assets/images/avatar/maleTeacher.png" />
-    <entry file="file://$PROJECT_DIR$/src/renderer/assets/images/avatar/femaleTeacher.png" />
     <entry file="file://$PROJECT_DIR$/src/renderer/components/pic.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-589">
@@ -541,35 +736,12 @@
     <entry file="file://$PROJECT_DIR$/src/renderer/components/groupTree.vue" />
     <entry file="file://$PROJECT_DIR$/src/renderer/components/orgTree.vue" />
     <entry file="file://$PROJECT_DIR$/src/renderer/components/classTree.vue" />
-    <entry file="file://$PROJECT_DIR$/node_modules/iview/src/components/tag/tag.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/iview/src/components/tag/tag.vue" />
     <entry file="file://$PROJECT_DIR$/src/renderer/pages/camera-teacher1.vue" />
     <entry file="file://$PROJECT_DIR$/src/renderer/pages/camera-teacher.vue" />
     <entry file="file://$PROJECT_DIR$/src/renderer/assets/images/avatar/default.png" />
     <entry file="file://$PROJECT_DIR$/src/renderer/components/userAvatar.vue" />
     <entry file="file://$PROJECT_DIR$/node_modules/_electron@2.0.12@electron/electron.d.ts" />
-    <entry file="file://$PROJECT_DIR$/.eslintignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/datastore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/imageCard.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-529">
-          <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -585,23 +757,6 @@
         <state relative-caret-position="-4800" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.electron-vue/webpack.main.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-675" />
@@ -614,20 +769,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/iview/src/styles/index.less">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/iview/src/styles/index.less" />
     <entry file="file://$PROJECT_DIR$/src/renderer/assets/iview.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -637,13 +783,6 @@
         <state relative-caret-position="198">
           <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
           <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/assets/override.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="182" column="20" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -666,20 +805,192 @@
     <entry file="file://$PROJECT_DIR$/src/renderer/assets/images/slide3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/images/qrCode.png" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/datastore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/pages/album.vue" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/album.vue" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/actionButtonContainer.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/images/camera-overlay.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/components/panel.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="125">
           <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
           <folding>
-            <element signature="e#250#281#0" />
+            <element signature="e#70#244#0" />
+            <element signature="e#274#305#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/titleBoard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="133" column="57" lean-forward="true" selection-start-line="133" selection-start-column="57" selection-end-line="133" selection-end-column="57" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/imageCard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1450">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <folding>
+            <element signature="n#style#0;n#Poptip#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/actionButtonItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/override.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1251">
+          <caret line="228" column="32" selection-start-line="228" selection-start-column="32" selection-end-line="228" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue-cropper/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue-cropper/example/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue-cropper/src/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue-cropper/src/vue-cropper.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="150" column="14" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1150">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/camera.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#canvas#0;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#1;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/pages/workspace.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="242" column="67" selection-start-line="242" selection-start-column="67" selection-end-line="242" selection-end-column="67" />
+          <folding>
+            <element signature="e#39#323#0" />
+            <element signature="e#346#743#0" />
+            <element signature="n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#title-board#0;n#div#0;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#action-button-container#0;n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#action-button-item#0;n#action-button-container#0;n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#camera#0;n#div#1;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#title-board#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#span#0;n#title-board#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#Button#0;n#span#0;n#title-board#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#Alert#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#template#0;n#Alert#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#Tag#2;n#div#0;n#image-card#0;n#div#0;n#div#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/components/headerBar.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        <state relative-caret-position="326">
+          <caret line="160" column="27" lean-forward="true" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
           <folding>
             <element signature="n#div#1;n#div#0;n#Modal#0;n#header#0;n#template#0;n#!!top" />
             <element signature="n#div#3;n#div#0;n#Modal#0;n#header#0;n#template#0;n#!!top" />
@@ -687,96 +998,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/camera.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#!!top" />
-            <element signature="n#Modal#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#vueCropper#0;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/titleBoard.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/pages/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1000">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding>
-            <element signature="e#771#3167#0" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+        <state relative-caret-position="408">
+          <caret line="67" column="3" lean-forward="true" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
           <folding>
-            <element signature="e#128#218#0" />
-            <element signature="e#397#514#0" />
-            <element signature="e#551#613#0" />
-            <element signature="e#590#611#0" />
-            <element signature="e#641#701#0" />
-            <element signature="e#670#699#0" />
-            <element signature="e#775#883#0" />
-            <element signature="e#809#843#0" />
-            <element signature="e#849#881#0" />
+            <element signature="e#15#88#0" expanded="true" />
             <element signature="n#!!block;n#createWebWindow#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/pages/workspace.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="198" column="9" lean-forward="true" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/pages/album.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="104" column="32" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
-          <folding>
-            <element signature="e#292#701#0" />
-            <element signature="e#719#2184#0" />
-            <element signature="n#panel#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#title-board#0;n#panel#0;n#div#0;n#Col#0;n#Row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#panel#0;n#div#0;n#Col#0;n#Row#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="e#4465#4610#0" />
-            <element signature="e#4817#5007#0" />
-            <element signature="e#5032#5075#0" />
-            <element signature="e#5108#5366#0" />
-            <element signature="e#5400#5667#0" />
-            <element signature="e#5702#5710#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/pages/home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="202" column="42" selection-start-line="202" selection-start-column="42" selection-end-line="202" selection-end-column="42" />
+        <state relative-caret-position="-517">
+          <caret line="366" column="77" selection-start-line="366" selection-start-column="77" selection-end-line="366" selection-end-column="77" />
           <folding>
+            <element signature="e#137#2789#0" />
+            <element signature="e#318#908#0" />
+            <element signature="e#543#894#0" />
+            <element signature="e#936#1407#0" />
+            <element signature="e#1307#1393#0" />
+            <element signature="e#1433#2779#0" />
+            <element signature="e#1525#2377#0" />
+            <element signature="e#1928#2006#0" />
+            <element signature="e#2035#2099#0" />
+            <element signature="e#2128#2235#0" />
+            <element signature="e#2265#2359#0" />
+            <element signature="e#2414#2765#0" />
+            <element signature="e#2812#7799#0" />
+            <element signature="e#2899#3599#0" />
+            <element signature="e#3260#3584#0" />
+            <element signature="e#3325#3566#0" />
+            <element signature="e#3624#4277#0" />
+            <element signature="e#3901#4263#0" />
+            <element signature="e#4303#7789#0" />
+            <element signature="e#4485#7545#0" />
+            <element signature="e#4629#6644#0" />
+            <element signature="e#4818#5161#0" />
+            <element signature="e#5195#5576#0" />
+            <element signature="e#5313#5550#0" />
+            <element signature="e#5611#6621#0" />
+            <element signature="e#6269#6484#0" />
+            <element signature="e#6311#6454#0" />
+            <element signature="e#6516#6595#0" />
+            <element signature="e#6673#6957#0" />
+            <element signature="e#6987#7527#0" />
+            <element signature="e#7109#7178#0" />
+            <element signature="e#7227#7374#0" />
+            <element signature="e#7261#7348#0" />
+            <element signature="e#7424#7505#0" />
+            <element signature="e#7581#7774#0" />
+            <element signature="e#7688#7756#0" />
+            <element signature="e#8349#9189#0" />
+            <element signature="e#8550#8751#0" />
+            <element signature="e#8776#9175#0" />
+            <element signature="e#8915#9157#0" />
+            <element signature="e#9212#9293#0" />
+            <element signature="e#9315#9521#0" />
+            <element signature="e#9451#9507#0" />
             <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#0;n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
@@ -788,9 +1068,31 @@
             <element signature="n#div#0;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#template#0;n#div#1;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#div#0;n#template#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#template#0;n#div#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Page#0;n#div#1;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#action-button-item#0;n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#action-button-item#1;n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#action-button-item#2;n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Poptip#0;n#div#0;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#Poptip#0;n#div#0;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#img#0;n#div#0;n#Poptip#0;n#div#0;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#p#0;n#div#1;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Slider#0;n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" />
             <element signature="n#Modal#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#Form#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#FormItem#0;n#Form#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
@@ -801,6 +1103,59 @@
             <element signature="n#FormItem#0;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#FormItem#1;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#FormItem#2;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="e#17647#18460#0" />
+            <element signature="e#17660#18455#0" />
+            <element signature="e#17676#17812#0" />
+            <element signature="e#17828#17864#0" />
+            <element signature="e#17878#17993#0" />
+            <element signature="e#18007#18293#0" />
+            <element signature="e#18037#18071#0" />
+            <element signature="e#18098#18179#0" />
+            <element signature="e#18204#18285#0" />
+            <element signature="e#18309#18430#0" />
+            <element signature="e#18346#18422#0" />
+            <element signature="e#18506#18646#0" />
+            <element signature="e#18673#18790#0" />
+            <element signature="e#18823#18865#0" />
+            <element signature="e#18889#18938#0" />
+            <element signature="e#18969#19059#0" />
+            <element signature="e#19084#19130#0" />
+            <element signature="e#19163#19417#0" />
+            <element signature="e#19281#19409#0" />
+            <element signature="e#19451#19754#0" />
+            <element signature="e#19505#19589#0" />
+            <element signature="e#19640#19746#0" />
+            <element signature="e#19659#19698#0" />
+            <element signature="e#19789#20213#0" />
+            <element signature="e#20243#20658#0" />
+            <element signature="e#20343#20471#0" />
+            <element signature="e#20515#20650#0" />
+            <element signature="e#20686#21056#0" />
+            <element signature="e#20810#20863#0" />
+            <element signature="e#20875#21048#0" />
+            <element signature="e#21085#21173#0" />
+            <element signature="e#21196#21566#0" />
+            <element signature="e#21402#21558#0" />
+            <element signature="e#21421#21460#0" />
+            <element signature="e#21589#22280#0" />
+            <element signature="e#21839#21975#0" />
+            <element signature="e#21858#21897#0" />
+            <element signature="e#21998#22054#0" />
+            <element signature="e#22142#22181#0" />
+            <element signature="e#22313#23019#0" />
+            <element signature="e#22377#23011#0" />
+            <element signature="e#22468#22925#0" />
+            <element signature="e#22533#22913#0" />
+            <element signature="e#22621#22899#0" />
+            <element signature="e#22646#22697#0" />
+            <element signature="e#22951#23003#0" />
+            <element signature="e#23052#23125#0" />
+            <element signature="e#23225#23431#0" />
+            <element signature="e#23320#23423#0" />
+            <element signature="e#23339#23378#0" />
+            <element signature="e#23551#23684#0" />
+            <element signature="e#23621#23671#0" />
+            <element signature="e#23714#23750#0" />
           </folding>
         </state>
       </provider>

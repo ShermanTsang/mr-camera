@@ -1,6 +1,7 @@
 'use strict';
 
-import {app, Menu, ipcMain, BrowserWindow, screen} from 'electron';
+import {app, Menu, ipcMain, BrowserWindow, screen, Tray} from 'electron';
+import path from 'path';
 
 if (process.env.NODE_ENV !== 'development') {
   global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\');
@@ -8,6 +9,7 @@ if (process.env.NODE_ENV !== 'development') {
 
 let mainWindow;
 let childWindow;
+let tray = null;
 
 const winURL = process.env.NODE_ENV === 'development'
   ? `http://localhost:9080`
@@ -16,8 +18,30 @@ const winURL = process.env.NODE_ENV === 'development'
 app.on('ready', () => {
   const {width, height} = screen.getPrimaryDisplay().workAreaSize;
   createMainWindow(width - 300, height - 100);
+
+  const trayIcon = path.join(__dirname, '/resource/icon.ico');
+  tray = new Tray(trayIcon);
+  const contextMenu = Menu.buildFromTemplate([
+    {
+      label: '退出应用',
+      click: () => {
+        if (process.platform !== 'darwin') {
+          app.quit();
+        }
+      }
+    },
+    {
+      label: '移除图标',
+      click: () => {
+        tray.destroy();
+      }
+    }
+  ]);
+  tray.setToolTip('相机先生 Mr.Camera');
+  tray.setContextMenu(contextMenu);
 });
-app.on('window-all-closed', () => {
+
+app.on('quit', () => {
   if (process.platform !== 'darwin') {
     app.quit();
   }
@@ -34,6 +58,13 @@ ipcMain.on('max', e => {
     mainWindow.unmaximize();
   } else {
     mainWindow.maximize();
+  }
+});
+ipcMain.on('pin', e => {
+  if (mainWindow.isAlwaysOnTop()) {
+
+  } else {
+    mainWindow.setAlwaysOnTop(1);
   }
 });
 ipcMain.on('close', e => mainWindow.close());
@@ -68,6 +99,7 @@ function createMainWindow(width = 980, height = 680) {
     mainWindow.focus();
   });
 }
+
 function createWebWindow(width = 980, height = 680, url, title = 'Mr Camera') {
   Menu.setApplicationMenu(null);
   childWindow = new BrowserWindow({

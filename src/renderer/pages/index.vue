@@ -129,8 +129,8 @@
                     相机先生
                     <div class="index-subtitle">Mr Camera</div>
                 </div>
-                <div class="index-statics" v-if="data.projectAmount > 0">
-                    <span>{{data.projectAmount}}</span> 个相册
+                <div class="index-statics" v-if="data.albumAmount > 0">
+                    <span>{{data.albumAmount}}</span> 个相册
                     <span>{{data.photoAmount}}</span> 张照片
                 </div>
                 <div class="index-statics" v-else>
@@ -156,7 +156,7 @@ export default {
       },
       data: {
         photoAmount: 0,
-        projectAmount: 0,
+        albumAmount: 0,
         slide: [
           {id: 1, text: ''},
           {id: 2, text: ''},
@@ -194,17 +194,17 @@ export default {
       }, 3000);
     },
     queryStatics() {
-      this.$db.count({scheme: 'photoList'}, (error, count) => {
-        if (error) {
-          console.log(error);
+      this.$db.count({scheme: 'photoList'}, (err, count) => {
+        if (err) {
+          console.log(err);
         }
         this.data.photoAmount = count;
       });
-      this.$db.count({scheme: 'projectList'}, (error, count) => {
-        if (error) {
-          console.log(error);
+      this.$db.count({scheme: 'albumList'}, (err, count) => {
+        if (err) {
+          console.log(err);
         }
-        this.data.projectAmount = count;
+        this.data.albumAmount = count;
       });
     }
   },

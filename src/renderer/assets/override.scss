@@ -63,9 +63,24 @@
 
 .ivu-form-item {
   .ivu-form-item-label {
-    font-size: .9rem !important;
+    font-size: 1rem !important;
     letter-spacing: 1px;
     font-weight: normal;
+    color: #333333;
+  }
+
+  .ivu-form-item-content {
+    input {
+      font-size: 1rem;
+      border-radius: 0;
+      padding: 10px;
+      height: 50px;
+
+      &:focus {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1) inset;
+        border-color: #eee;
+      }
+    }
   }
 
   label {
@@ -180,7 +195,8 @@
   }
 
   .ivu-modal-content {
-    border-radius:0;
+    border-radius: 0;
+
     .ivu-modal-close {
       i {
         color: #999999;
@@ -207,4 +223,8 @@
   margin: 6px 0 !important;
   color: #999 !important;
   font-size: .7rem !important;
+}
+
+label{
+  font-weight: normal !important;
 }

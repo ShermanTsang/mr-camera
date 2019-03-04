@@ -6,6 +6,7 @@ import store from './store';
 import iView from 'iview';
 import db from './datastore';
 import vueCropper from 'vue-cropper';
+import moment from 'moment';
 import kebabCase from 'lodash/kebabCase';
 import './assets/iview.less';
 import './assets/override.scss';
@@ -21,6 +22,10 @@ Vue.prototype.$db = db;
 Vue.prototype.$getId = () => {
   return Number(Math.random().toString().substr(3, length) + Date.now()).toString(36);
 };
+Vue.prototype.$moment = moment;
+Vue.filter('dateFormat', function(dataStr, pattern = 'YYYY-MM-DD HH:mm:ss') {
+  return moment(dataStr).format(pattern);
+});
 
 const nextComponents = require.context('./components', true, /\.vue$/);
 nextComponents.keys().forEach(fileName => {

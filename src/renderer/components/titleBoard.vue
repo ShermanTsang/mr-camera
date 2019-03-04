@@ -1,7 +1,8 @@
 <style scoped lang="scss">
     .title-board-container {
+        cursor: default;
         position: relative;
-        margin: 20px;
+        margin: 10px 20px;
         display: flex;
         flex-flow: nowrap row;
         align-items: center;

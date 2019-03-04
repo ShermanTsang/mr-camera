@@ -9,34 +9,35 @@
             height: 100%;
 
             &-view {
-                margin-top: 40px;
+                margin-top: 50px;
                 height: 100%;
+            }
+
+            ::-webkit-scrollbar {
+                width: 6px;
+
+                &:horizontal {
+                    height: 0;
+                }
+
+                &-track {
+                    background-color: transparent;
+                }
+
+                &-thumb {
+                    border-radius: 20px;
+                    opacity: .35;
+                    background-color: transparent;
+                }
             }
 
             .scrollable {
                 &:hover {
-                    &::-webkit-scrollbar {
-                        width: 4px !important;
+                    &::-webkit-scrollbar-thumb {
+                        border: 1px solid rgba(0, 0, 0, .1);
+                        background-color: rgba(177, 177, 177, .5);
                     }
                 }
-            }
-
-            ::-webkit-scrollbar {
-                width: 0;
-            }
-
-            ::-webkit-scrollbar:horizontal {
-                height: 0;
-            }
-
-            ::-webkit-scrollbar-track {
-                background-color: #efefef;
-            }
-
-            ::-webkit-scrollbar-thumb {
-                border-radius: 2px;
-                opacity: .35;
-                background-color: #ccc;
             }
         }
     }
@@ -63,7 +64,7 @@ export default {
   mounted() {
     this.route = this.$route;
     this.$Message.config({
-      top: 50,
+      top: 100,
       duration: 3
     });
     this.config.innerWidth = window.innerWidth;

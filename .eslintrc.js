@@ -22,16 +22,18 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    "vue/no-parsing-error": [2, {
-      "x-invalid-end-tag": false
+    'vue/no-parsing-error': [2, {
+      'x-invalid-end-tag': false
     }],
-    "no-var": 1,
+    'no-var': 1,
     'eqeqeq': 'off',
-    'space-before-function-paren': ["error", "never"],
+    'space-before-function-paren': ['error', 'never'],
     'semi': ['error', 'always'],
+    'handle-callback-err': 'warn',
+    // 'semi': 0,
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
-}
+};

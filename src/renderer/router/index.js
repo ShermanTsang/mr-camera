@@ -21,11 +21,6 @@ export default new Router({
       component: require('@/pages/workspace').default
     },
     {
-      path: '/album/',
-      name: 'album',
-      component: require('@/pages/album').default
-    },
-    {
       path: '*',
       redirect: '/'
     }

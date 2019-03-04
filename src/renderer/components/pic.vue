@@ -10,7 +10,7 @@
             :height="height"
             :style="{'margin':margin,'padding':padding}"
             @click="handleClick"
-            onerror="imageError()">
+            onerr="imageError()">
 </template>
 
 <script>
