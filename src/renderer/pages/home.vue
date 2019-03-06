@@ -32,9 +32,8 @@
                 outline: 0;
                 border: none;
                 border-top: 1px solid #efefef;
-                text-align: center;
                 width: 100%;
-                font-size: 1rem;
+                font-size: .95rem;
                 letter-spacing: 1px;
                 box-shadow: inset 0 0 8px rgba(177, 177, 177, 0.2);
 
@@ -85,8 +84,8 @@
                 }
             }
 
-            &:hover{
-                box-shadow: 4px 0 10px rgba(0, 0, 0, .2);
+            &:hover {
+                box-shadow: 2px 0 8px rgba(0, 0, 0, .2);
             }
         }
 
@@ -141,6 +140,7 @@
             }
 
             .album-main {
+                position: relative;
                 margin: 60px auto 0 auto;
                 padding: 10px 10px 200px 10px;
                 overflow: auto;
@@ -206,13 +206,19 @@
 
                     }
 
-                    &-info {
+                    &-name {
                         padding: 10px 5px;
-                        font-size: .9rem;
                         letter-spacing: 1px;
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         color: #666;
+
+                        /deep/ input {
+                            font-size: .9rem;
+                            border: none;
+                            background: transparent;
+                            border-bottom: 1px dashed #fff;
+                        }
                     }
 
                     &:hover {
@@ -228,15 +234,21 @@
                             }
                         }
 
+                        .photo-item-name {
+                            /deep/ input {
+                                border-bottom: 1px dashed #ccc;
+                            }
+                        }
                         .photo-item-main-action {
                             transform: translateY(0);
                         }
                     }
                 }
 
-                .photo-item-active{
-                    box-shadow: 2px 2px 8px rgba(177, 177, 177, .2);
-                    .photo-item-info{
+                .photo-item-active {
+                    box-shadow: 0 0 8px $theme-color;
+
+                    .photo-item-info {
                         color: $theme-color;
                     }
                 }
@@ -250,7 +262,7 @@
             position: fixed;
             align-items: center;
             justify-content: space-between;
-            height: 68px;
+            height: 80px;
             bottom: 0;
             right: 0;
             width: calc(100% - 300px);
@@ -268,8 +280,8 @@
                 overflow: hidden;
 
                 &-photo {
-                    height: 68px;
-                    width: 70px;
+                    height: 80px;
+                    width: 80px;
                     background-size: cover !important;
                     background-position: center !important;
                 }
@@ -278,6 +290,11 @@
                     padding: 10px;
                     font-size: .95rem;
                     cursor: default;
+
+                    &-name{
+                        margin-bottom:10px;
+                        letter-spacing: 1px;
+                    }
 
                     span {
                         cursor: default;
@@ -324,7 +341,7 @@
                     </div>
                 </div>
             </title-board>
-            <input type="text" class="album-search" placeholder="搜索相册" v-model="params.keyword">
+            <input class="album-search" placeholder="搜索相册" v-model="params.keyword">
             <div class="album-list scrollable">
                 <div v-if="data.albumList.length === 0 && params.keyword === ''" class="album-item album-item-create"
                      @click="createAlbumItem()">
@@ -364,14 +381,14 @@
                 </div>
             </template>
             <template v-else>
-                <Spin size="large" fix v-if="status.loadingPhotoList"></Spin>
                 <div class="album-header">
                     <div class="album-name">
                         {{data.album.name}} <span>{{data.album.total || 0}}</span>
                     </div>
                     <div class="album-page">
                         <Page :current.sync="params.page.current" :total="params.page.total"
-                              :page-size="params.page.pageSize" simple show-sizer/>
+                              :page-size="params.page.pageSize" simple show-sizer
+                              @on-change="queryPhotoList"/>
                     </div>
                     <action-button-container v-if="form.checkAlbumPassword.password === data.album.password">
                         <action-button-item @click="redirectPage('workspace')">
@@ -389,6 +406,7 @@
                     </action-button-container>
                 </div>
                 <div class="album-main scrollable">
+                    <Spin size="large" fix v-if="status.loadingPhotoList"></Spin>
                     <div v-for="item in data.photoList" :key="item.id" class="photo-item"
                          :class="{'photo-item-active': item.id === data.photo.id}"
                          @click="selectPhotoItem(item)">
@@ -404,8 +422,8 @@
                                 <Icon size="26" type="md-download" @click="downloadPhotoItem(item)"/>
                             </div>
                         </div>
-                        <div class="photo-item-info">
-                            {{item.name || '未命名'}}
+                        <div class="photo-item-name">
+                            <Input @on-blur="modifyPhotoItemName" v-model="item.name" :placeholder="`未命名`"/>
                         </div>
                     </div>
                 </div>
@@ -423,17 +441,14 @@
                         </Poptip>
                     </div>
                     <div class="album-tool-select-info">
-                        {{data.photo.name || `未命名 ${data.photo.id}`}}
-                        <p>
-                            <span>{{data.photo.width || 'width'}} x {{data.photo.height || 'height'}} px</span>
-                            <span>{{data.photo.format || 'format'}}</span>
-                            <span>{{data.photo.time || 'time'}}</span>
-                        </p>
+                        <div class="album-tool-select-info-name">{{data.photo.name || `未命名 ${data.photo.id}`}}</div>
+                        <span>{{data.photo.width || 'width'}} x {{data.photo.height || 'height'}} px</span>
+                        <span>{{data.photo.format || 'format'}}</span>
+                        <span>{{data.photo.time || 'time'}}</span>
                     </div>
                 </template>
             </div>
             <div class="album-tool-select-action">
-                123
             </div>
             <div class="album-tool-slide">
                 <Slider v-model="config.photoItemSize" :tip-format="formatSepText" :step="20" :min="100"
@@ -511,7 +526,7 @@ export default {
         page: {
           current: 1,
           total: 0,
-          pageSize: 20
+          pageSize: 15
         }
       },
       timer: null
@@ -631,7 +646,20 @@ export default {
           console.log(err);
         }
         this.data.photoList = docs;
+        console.log(docs);
         this.status.loadingPhotoList = false;
+      });
+    },
+    modifyPhotoItemName() {
+      const {id, name, album} = this.data.photo;
+      this.$db.update({
+        scheme: 'photoList',
+        album,
+        id
+      }, {$set: {name}}, {}, (err, docs) => {
+        if (err) {
+          console.log(err);
+        }
       });
     },
     deleteAlbumItem(albumItem) {
@@ -678,9 +706,6 @@ export default {
       this.timer = setTimeout(() => {
         this.searchByAlbumName(keyword);
       }, 800);
-    },
-    'params.page.current'() {
-      this.queryPhotoList();
     }
   }
 };

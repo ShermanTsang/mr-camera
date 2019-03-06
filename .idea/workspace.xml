@@ -1,35 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7dc3095b-5074-4f92-9a00-cee47551015f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/zengx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/actionButtonContainer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/actionButtonItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="7dc3095b-5074-4f92-9a00-cee47551015f" name="Default Changelist" comment="1,新增 第二期成语竞赛活动 静态页面;">
+      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/assets/images/qrCode.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/assets/override.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/assets/override.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/actionButtonItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/actionButtonItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/camera.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/camera.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/headerBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/headerBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/imageCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/imageCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/panel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/panel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/pic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/pic.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/titleBoard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/titleBoard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/pages/album.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/pages/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/pages/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/pages/workspace.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/pages/workspace.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -49,93 +30,137 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/renderer/components/camera.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="3925">
+              <caret line="351" column="23" selection-start-line="351" selection-start-column="23" selection-end-line="351" selection-end-column="23" />
               <folding>
+                <element signature="n#style#0;n#!!top" />
+                <element signature="e#71#1291#0" />
+                <element signature="e#169#239#0" />
+                <element signature="e#267#547#0" />
+                <element signature="e#570#1285#0" />
+                <element signature="e#935#1275#0" />
+                <element signature="e#1113#1261#0" />
+                <element signature="e#1312#1561#0" />
+                <element signature="e#1415#1555#0" />
+                <element signature="e#1580#2330#0" />
+                <element signature="e#1652#2256#0" />
+                <element signature="e#1896#2009#0" />
+                <element signature="e#2030#2109#0" />
+                <element signature="e#2131#2246#0" />
+                <element signature="e#2172#2232#0" />
+                <element signature="e#2280#2324#0" />
                 <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#style#0;n#canvas#0;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#canvas#1;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderer/pages/workspace.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="242" column="67" selection-start-line="242" selection-start-column="67" selection-end-line="242" selection-end-column="67" />
-              <folding>
-                <element signature="e#39#323#0" />
-                <element signature="e#346#743#0" />
-                <element signature="n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-                <element signature="n#title-board#0;n#div#0;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-                <element signature="n#action-button-container#0;n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-                <element signature="n#action-button-item#0;n#action-button-container#0;n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-                <element signature="n#camera#0;n#div#1;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-                <element signature="n#title-board#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
-                <element signature="n#span#0;n#title-board#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
-                <element signature="n#Button#0;n#span#0;n#title-board#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
-                <element signature="n#Alert#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
-                <element signature="n#template#0;n#Alert#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
-                <element signature="n#Tag#2;n#div#0;n#image-card#0;n#div#0;n#div#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#video#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#RadioGroup#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#RadioGroup#0;n#div#1;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#canvas#0;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#vueCropper#0;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#img#0;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Button#0;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Button#1;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Button#2;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Dropdown#0;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#Button#0;n#Dropdown#0;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#DropdownMenu#0;n#Dropdown#0;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/renderer/pages/workspace.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41">
+              <caret line="300" column="9" selection-start-line="300" selection-start-column="9" selection-end-line="300" selection-end-column="9" />
+              <folding>
+                <element signature="e#39#323#0" />
+                <element signature="e#244#317#0" />
+                <element signature="e#346#743#0" />
+                <element signature="e#368#737#0" />
+                <element signature="e#455#727#0" />
+                <element signature="e#615#713#0" />
+                <element signature="n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#title-board#0;n#div#0;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#action-button-container#0;n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#action-button-item#0;n#action-button-container#0;n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#Alert#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#template#0;n#Alert#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+                <element signature="n#image-card#0;n#template#0;n#div#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/renderer/pages/home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-517">
-              <caret line="366" column="77" selection-start-line="366" selection-start-column="77" selection-end-line="366" selection-end-column="77" />
+            <state relative-caret-position="1600">
+              <caret line="457" column="8" selection-start-line="457" selection-start-column="8" selection-end-line="457" selection-end-column="8" />
               <folding>
-                <element signature="e#137#2789#0" />
-                <element signature="e#318#908#0" />
-                <element signature="e#543#894#0" />
-                <element signature="e#936#1407#0" />
-                <element signature="e#1307#1393#0" />
-                <element signature="e#1433#2779#0" />
-                <element signature="e#1525#2377#0" />
-                <element signature="e#1928#2006#0" />
-                <element signature="e#2035#2099#0" />
-                <element signature="e#2128#2235#0" />
-                <element signature="e#2265#2359#0" />
-                <element signature="e#2414#2765#0" />
-                <element signature="e#2812#7799#0" />
-                <element signature="e#2899#3599#0" />
-                <element signature="e#3260#3584#0" />
-                <element signature="e#3325#3566#0" />
-                <element signature="e#3624#4277#0" />
-                <element signature="e#3901#4263#0" />
-                <element signature="e#4303#7789#0" />
-                <element signature="e#4485#7545#0" />
-                <element signature="e#4629#6644#0" />
-                <element signature="e#4818#5161#0" />
-                <element signature="e#5195#5576#0" />
-                <element signature="e#5313#5550#0" />
-                <element signature="e#5611#6621#0" />
-                <element signature="e#6269#6484#0" />
-                <element signature="e#6311#6454#0" />
-                <element signature="e#6516#6595#0" />
-                <element signature="e#6673#6957#0" />
-                <element signature="e#6987#7527#0" />
-                <element signature="e#7109#7178#0" />
-                <element signature="e#7227#7374#0" />
-                <element signature="e#7261#7348#0" />
-                <element signature="e#7424#7505#0" />
-                <element signature="e#7581#7774#0" />
-                <element signature="e#7688#7756#0" />
-                <element signature="e#8349#9189#0" />
-                <element signature="e#8550#8751#0" />
-                <element signature="e#8776#9175#0" />
-                <element signature="e#8915#9157#0" />
-                <element signature="e#9212#9293#0" />
-                <element signature="e#9315#9521#0" />
-                <element signature="e#9451#9507#0" />
+                <element signature="e#137#2894#0" />
+                <element signature="e#363#953#0" />
+                <element signature="e#588#939#0" />
+                <element signature="e#981#1418#0" />
+                <element signature="e#1318#1404#0" />
+                <element signature="e#1444#2790#0" />
+                <element signature="e#1536#2388#0" />
+                <element signature="e#1939#2017#0" />
+                <element signature="e#2046#2110#0" />
+                <element signature="e#2139#2246#0" />
+                <element signature="e#2276#2370#0" />
+                <element signature="e#2425#2776#0" />
+                <element signature="e#2812#2884#0" />
+                <element signature="e#3004#3704#0" />
+                <element signature="e#3365#3689#0" />
+                <element signature="e#3430#3671#0" />
+                <element signature="e#3729#4382#0" />
+                <element signature="e#4006#4368#0" />
+                <element signature="e#4959#5302#0" />
+                <element signature="e#5336#5717#0" />
+                <element signature="e#5454#5691#0" />
+                <element signature="e#5752#6762#0" />
+                <element signature="e#6410#6625#0" />
+                <element signature="e#6452#6595#0" />
+                <element signature="e#6657#6736#0" />
+                <element signature="e#6814#7323#0" />
+                <element signature="e#7073#7301#0" />
+                <element signature="e#7353#8099#0" />
+                <element signature="e#7475#7544#0" />
+                <element signature="e#7593#7740#0" />
+                <element signature="e#7627#7714#0" />
+                <element signature="e#7783#7947#0" />
+                <element signature="e#7826#7921#0" />
+                <element signature="e#7996#8077#0" />
+                <element signature="e#8154#8334#0" />
+                <element signature="e#8248#8316#0" />
+                <element signature="e#8381#10370#0" />
+                <element signature="e#8909#9889#0" />
+                <element signature="e#9110#9311#0" />
+                <element signature="e#9336#9875#0" />
+                <element signature="e#9476#9588#0" />
+                <element signature="e#9615#9857#0" />
+                <element signature="e#9912#9993#0" />
+                <element signature="e#10015#10221#0" />
+                <element signature="e#10151#10207#0" />
+                <element signature="e#10243#10360#0" />
                 <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#0;n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
@@ -148,6 +173,9 @@
                 <element signature="n#div#1;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#template#0;n#div#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#0;n#template#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#template#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#template#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
@@ -156,6 +184,8 @@
                 <element signature="n#action-button-item#0;n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#action-button-item#1;n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#action-button-item#2;n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
@@ -168,7 +198,6 @@
                 <element signature="n#div#0;n#Poptip#0;n#div#0;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#img#0;n#div#0;n#Poptip#0;n#div#0;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#1;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#p#0;n#div#1;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#Slider#0;n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" />
@@ -182,85 +211,44 @@
                 <element signature="n#FormItem#0;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#FormItem#1;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#FormItem#2;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
-                <element signature="e#17647#18460#0" />
-                <element signature="e#17660#18455#0" />
-                <element signature="e#17676#17812#0" />
-                <element signature="e#17828#17864#0" />
-                <element signature="e#17878#17993#0" />
-                <element signature="e#18007#18293#0" />
-                <element signature="e#18037#18071#0" />
-                <element signature="e#18098#18179#0" />
-                <element signature="e#18204#18285#0" />
-                <element signature="e#18309#18430#0" />
-                <element signature="e#18346#18422#0" />
-                <element signature="e#18506#18646#0" />
-                <element signature="e#18673#18790#0" />
-                <element signature="e#18823#18865#0" />
-                <element signature="e#18889#18938#0" />
-                <element signature="e#18969#19059#0" />
-                <element signature="e#19084#19130#0" />
-                <element signature="e#19163#19417#0" />
-                <element signature="e#19281#19409#0" />
-                <element signature="e#19451#19754#0" />
-                <element signature="e#19505#19589#0" />
-                <element signature="e#19640#19746#0" />
-                <element signature="e#19659#19698#0" />
-                <element signature="e#19789#20213#0" />
-                <element signature="e#20243#20658#0" />
-                <element signature="e#20343#20471#0" />
-                <element signature="e#20515#20650#0" />
-                <element signature="e#20686#21056#0" />
-                <element signature="e#20810#20863#0" />
-                <element signature="e#20875#21048#0" />
-                <element signature="e#21085#21173#0" />
-                <element signature="e#21196#21566#0" />
-                <element signature="e#21402#21558#0" />
-                <element signature="e#21421#21460#0" />
-                <element signature="e#21589#22280#0" />
-                <element signature="e#21839#21975#0" />
-                <element signature="e#21858#21897#0" />
-                <element signature="e#21998#22054#0" />
-                <element signature="e#22142#22181#0" />
-                <element signature="e#22313#23019#0" />
-                <element signature="e#22377#23011#0" />
-                <element signature="e#22468#22925#0" />
-                <element signature="e#22533#22913#0" />
-                <element signature="e#22621#22899#0" />
-                <element signature="e#22646#22697#0" />
-                <element signature="e#22951#23003#0" />
-                <element signature="e#23052#23125#0" />
-                <element signature="e#23225#23431#0" />
-                <element signature="e#23320#23423#0" />
-                <element signature="e#23339#23378#0" />
-                <element signature="e#23551#23684#0" />
-                <element signature="e#23621#23671#0" />
-                <element signature="e#23714#23750#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="67" column="3" lean-forward="true" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
-              <folding>
-                <element signature="e#15#88#0" expanded="true" />
-                <element signature="n#!!block;n#createWebWindow#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderer/components/headerBar.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="160" column="27" lean-forward="true" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
-              <folding>
-                <element signature="n#div#1;n#div#0;n#Modal#0;n#header#0;n#template#0;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#Modal#0;n#header#0;n#template#0;n#!!top" />
+                <element signature="e#18491#19304#0" />
+                <element signature="e#18504#19299#0" />
+                <element signature="e#18520#18656#0" />
+                <element signature="e#18672#18708#0" />
+                <element signature="e#18722#18837#0" />
+                <element signature="e#18851#19137#0" />
+                <element signature="e#18881#18915#0" />
+                <element signature="e#18942#19023#0" />
+                <element signature="e#19048#19129#0" />
+                <element signature="e#19153#19274#0" />
+                <element signature="e#19190#19266#0" />
+                <element signature="e#19350#19490#0" />
+                <element signature="e#19517#19634#0" />
+                <element signature="e#19667#19709#0" />
+                <element signature="e#19733#19782#0" />
+                <element signature="e#19813#19903#0" />
+                <element signature="e#19928#19974#0" />
+                <element signature="e#20007#20261#0" />
+                <element signature="e#20125#20253#0" />
+                <element signature="e#20295#20598#0" />
+                <element signature="e#20349#20433#0" />
+                <element signature="e#20484#20590#0" />
+                <element signature="e#20503#20542#0" />
+                <element signature="e#20633#21057#0" />
+                <element signature="e#21087#21502#0" />
+                <element signature="e#21187#21315#0" />
+                <element signature="e#21359#21494#0" />
+                <element signature="e#21530#21900#0" />
+                <element signature="e#21654#21707#0" />
+                <element signature="e#21719#21892#0" />
+                <element signature="e#21929#22017#0" />
+                <element signature="e#22040#22410#0" />
+                <element signature="e#22246#22402#0" />
+                <element signature="e#22265#22304#0" />
+                <element signature="e#22685#22815#0" />
+                <element signature="e#22704#22743#0" />
+                <element signature="e#22838#22894#0" />
+                <element signature="e#22982#23021#0" />
               </folding>
             </state>
           </provider>
@@ -278,47 +266,38 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>step</find>
-      <find>result-image</find>
-      <find>timer</find>
-      <find>emit</find>
-      <find>confirm</find>
-      <find>type</find>
-      <find>confirmCropper</find>
-      <find>cropper</find>
-      <find>resultPhotoPNG</find>
-      <find>download</find>
-      <find>confirmLink</find>
-      <find>outputType</find>
-      <find>jpg</find>
-      <find>this.$db</find>
-      <find>project</find>
-      <find>Project</find>
-      <find>direct</find>
-      <find>albumList</find>
-      <find>this.$Message</find>
-      <find>status.page</find>
-      <find>error</find>
-      <find>this.$db.find({</find>
-      <find>create</find>
-      <find>name</find>
-      <find>photo-item</find>
-      <find>:class=&quot;</find>
       <find>undefined</find>
-      <find>未命名</find>
       <find>unde</find>
       <find>加载中</find>
+      <find>未命名</find>
+      <find>modifyItemName</find>
+      <find>queryChangePhotoItemName</find>
+      <find>queryModifyPhotoItemName</find>
+      <find>queryModifyItemName</find>
+      <find>alert</find>
+      <find>123</find>
+      <find>Spin</find>
+      <find>add</find>
+      <find>type</find>
+      <find>Page</find>
+      <find>Obejct</find>
+      <find>isSho</find>
+      <find>ObjectList</find>
+      <find>saveAllObject</find>
+      <find>Object</find>
+      <find>NotShoted</find>
+      <find>photo.</find>
+      <find>&lt;camera</find>
+      <find>add-de</find>
+      <find>object</find>
+      <find>console</find>
+      <find>&lt;Radio</find>
+      <find>驴打滚</find>
+      <find>v-for</find>
+      <find>modal</find>
+      <find>批量添加</find>
     </findStrings>
     <replaceStrings>
-      <replace>selectAlbumItem</replace>
-      <replace>album-tip</replace>
-      <replace>album-tool</replace>
-      <replace>photoItemZoom</replace>
-      <replace>photoItemSize</replace>
-      <replace>quit</replace>
-      <replace>action-button</replace>
-      <replace>album</replace>
-      <replace>`image/${camera.outputType}`</replace>
       <replace>`image/${this.camera.outputType}`</replace>
       <replace>runCamera</replace>
       <replace>preview</replace>
@@ -340,6 +319,15 @@
       <replace>Albu</replace>
       <replace>params.page</replace>
       <replace>err</replace>
+      <replace>queryModifyItemName</replace>
+      <replace>queryModifyPhotoItemName</replace>
+      <replace>modifyItemName</replace>
+      <replace>modifyPhotoItemName</replace>
+      <replace>Object</replace>
+      <replace>saveAllItem</replace>
+      <replace>Photo</replace>
+      <replace>PhotoList</replace>
+      <replace>NotShot</replace>
     </replaceStrings>
     <dirStrings>
       <dir>E:\Develop\Project\MrCamera\src\renderer</dir>
@@ -379,24 +367,24 @@
         <option value="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" />
         <option value="$PROJECT_DIR$/src/renderer/pages/index.vue" />
         <option value="$PROJECT_DIR$/src/renderer/pages/album.vue" />
-        <option value="$PROJECT_DIR$/src/renderer/App.vue" />
         <option value="$PROJECT_DIR$/src/renderer/router/index.js" />
         <option value="$PROJECT_DIR$/src/renderer/components/album.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/panel.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/actionButtonContainer.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/actionButton.vue" />
-        <option value="$PROJECT_DIR$/src/renderer/components/actionButtonItem.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/imageCard.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/titleBoard.vue" />
         <option value="$PROJECT_DIR$/src/index.ejs" />
-        <option value="$PROJECT_DIR$/src/renderer/assets/override.scss" />
-        <option value="$PROJECT_DIR$/src/renderer/components/camera.vue" />
         <option value="$PROJECT_DIR$/src/renderer/main.js" />
-        <option value="$PROJECT_DIR$/src/renderer/pages/workspace.vue" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
-        <option value="$PROJECT_DIR$/src/renderer/pages/home.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/headerBar.vue" />
         <option value="$PROJECT_DIR$/src/main/index.js" />
+        <option value="$PROJECT_DIR$/src/renderer/components/actionButtonItem.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/home.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/camera.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/App.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/assets/override.scss" />
+        <option value="$PROJECT_DIR$/src/renderer/pages/workspace.vue" />
       </list>
     </option>
   </component>
@@ -419,49 +407,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MrCamera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MrCamera" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="header&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/headerBar.vue&#10;less&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/assets/iview.less&#10;headerbar&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/headerBar.vue&#10;album&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/pages/album.vue&#10;work&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/pages/workspace.vue&#10;camera&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/camera.vue&#10;image&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/imageCard.vue&#10;ima&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/imageCard.vue&#10;app&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/App.vue&#10;cam&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/camera.vue&#10;main&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/main.js&#10;mai&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/main.js&#10;panel&#9;FILE&#9;file://D:/Workspace/Develop/Project/MrCamera/src/renderer/components/panel.vue&#10;user&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/userAvatar.vue&#10;usercard&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/userCard.vue&#10;user-card&#9;null&#9;null&#10;userA&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/userAvatar.vue&#10;ava&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/userAvatar.vue&#10;pic&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/pic.vue&#10;tree&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/classTree.vue&#10;login&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/pages/login.vue&#10;class&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/classTree.vue&#10;text&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/textTag.vue&#10;over&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/assets/override.scss&#10;count&#9;null&#9;null&#10;appv&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/App.vue&#10;index&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/main/index.js&#10;use&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/user-card.vue&#10;title&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/titleBoard.vue&#10;ove&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/assets/override.scss&#10;pan&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/panel.vue&#10;pane&#9;FILE&#9;file://F:/Project/ews-app/camera-electron/src/renderer/components/panel.vue" />
@@ -479,7 +425,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.startup.tasks" />
     <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\apps\WebStorm\ch-0\182.4129.32\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -604,6 +550,9 @@
       <workItem from="1551685543900" duration="1785000" />
       <workItem from="1551687420327" duration="3808000" />
       <workItem from="1551691822102" duration="3689000" />
+      <workItem from="1551706759630" duration="5208000" />
+      <workItem from="1551745681069" duration="28931000" />
+      <workItem from="1551839236970" duration="6180000" />
     </task>
     <task id="LOCAL-00001" summary="eCamera&#10;1,新增 拍照逻辑静态页面 包括登陆、选择学校、选择班级;&#10;2,新增 一系列组件 服务于学拓帮工具应用.&#10;&#10;eMaster-client&#10;1,优化 loader页面 混乱的层级通过骚操作解决;">
       <created>1539943555084</created>
@@ -672,7 +621,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="518369000" />
+    <option name="totallyTimeSpent" value="558688000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -685,9 +634,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49255952" visible="true" weight="0.17760105" />
-      <window_info id="Structure" order="1" sideWeight="0.50744045" side_tool="true" weight="0.17760105" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48958334" weight="0.17760105" />
+      <window_info id="Structure" order="1" sideWeight="0.5104167" side_tool="true" visible="true" weight="0.17760105" />
       <window_info id="npm" order="2" sideWeight="0.5077951" side_tool="true" weight="0.15697674" />
       <window_info id="Favorites" order="3" sideWeight="0.47619048" side_tool="true" weight="0.17760105" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -698,7 +648,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32589287" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32589287" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50033134" side_tool="true" weight="0.4330357" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32738096" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
@@ -816,13 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/pages/album.vue" />
     <entry file="file://$PROJECT_DIR$/src/renderer/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -881,40 +824,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/imageCard.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1450">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#Poptip#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/actionButtonItem.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/assets/override.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1251">
-          <caret line="228" column="32" selection-start-line="228" selection-start-column="32" selection-end-line="228" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/vue-cropper/dist/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.eslintignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/vue-cropper/example/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4252" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/vue-cropper/src/index.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -950,47 +864,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/camera.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#canvas#0;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#1;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/pages/workspace.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="242" column="67" selection-start-line="242" selection-start-column="67" selection-end-line="242" selection-end-column="67" />
-          <folding>
-            <element signature="e#39#323#0" />
-            <element signature="e#346#743#0" />
-            <element signature="n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-            <element signature="n#title-board#0;n#div#0;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-            <element signature="n#action-button-container#0;n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-            <element signature="n#action-button-item#0;n#action-button-container#0;n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-            <element signature="n#camera#0;n#div#1;n#Col#0;n#Row#0;n#template#0;n#!!top" />
-            <element signature="n#title-board#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
-            <element signature="n#span#0;n#title-board#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
-            <element signature="n#Button#0;n#span#0;n#title-board#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
-            <element signature="n#Alert#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
-            <element signature="n#template#0;n#Alert#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
-            <element signature="n#Tag#2;n#div#0;n#image-card#0;n#div#0;n#div#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/components/headerBar.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
-          <caret line="160" column="27" lean-forward="true" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
+          <caret line="181" column="47" selection-start-line="181" selection-start-column="47" selection-end-line="181" selection-end-column="47" />
           <folding>
             <element signature="n#div#1;n#div#0;n#Modal#0;n#header#0;n#template#0;n#!!top" />
             <element signature="n#div#3;n#div#0;n#Modal#0;n#header#0;n#template#0;n#!!top" />
@@ -998,10 +875,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/imageCard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#Poptip#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="67" column="3" lean-forward="true" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+        <state relative-caret-position="-647">
+          <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
           <folding>
             <element signature="e#15#88#0" expanded="true" />
             <element signature="n#!!block;n#createWebWindow#0" />
@@ -1009,54 +896,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/actionButtonItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue-cropper/example/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16300" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/camera.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3925">
+          <caret line="351" column="23" selection-start-line="351" selection-start-column="23" selection-end-line="351" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#!!top" />
+            <element signature="e#71#1291#0" />
+            <element signature="e#169#239#0" />
+            <element signature="e#267#547#0" />
+            <element signature="e#570#1285#0" />
+            <element signature="e#935#1275#0" />
+            <element signature="e#1113#1261#0" />
+            <element signature="e#1312#1561#0" />
+            <element signature="e#1415#1555#0" />
+            <element signature="e#1580#2330#0" />
+            <element signature="e#1652#2256#0" />
+            <element signature="e#1896#2009#0" />
+            <element signature="e#2030#2109#0" />
+            <element signature="e#2131#2246#0" />
+            <element signature="e#2172#2232#0" />
+            <element signature="e#2280#2324#0" />
+            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#video#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#RadioGroup#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#RadioGroup#0;n#div#1;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#canvas#0;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#vueCropper#0;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#img#0;n#div#0;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Button#0;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Button#1;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Button#2;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Dropdown#0;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#Button#0;n#Dropdown#0;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#DropdownMenu#0;n#Dropdown#0;n#div#1;n#Modal#0;n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/pages/home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-517">
-          <caret line="366" column="77" selection-start-line="366" selection-start-column="77" selection-end-line="366" selection-end-column="77" />
+        <state relative-caret-position="1600">
+          <caret line="457" column="8" selection-start-line="457" selection-start-column="8" selection-end-line="457" selection-end-column="8" />
           <folding>
-            <element signature="e#137#2789#0" />
-            <element signature="e#318#908#0" />
-            <element signature="e#543#894#0" />
-            <element signature="e#936#1407#0" />
-            <element signature="e#1307#1393#0" />
-            <element signature="e#1433#2779#0" />
-            <element signature="e#1525#2377#0" />
-            <element signature="e#1928#2006#0" />
-            <element signature="e#2035#2099#0" />
-            <element signature="e#2128#2235#0" />
-            <element signature="e#2265#2359#0" />
-            <element signature="e#2414#2765#0" />
-            <element signature="e#2812#7799#0" />
-            <element signature="e#2899#3599#0" />
-            <element signature="e#3260#3584#0" />
-            <element signature="e#3325#3566#0" />
-            <element signature="e#3624#4277#0" />
-            <element signature="e#3901#4263#0" />
-            <element signature="e#4303#7789#0" />
-            <element signature="e#4485#7545#0" />
-            <element signature="e#4629#6644#0" />
-            <element signature="e#4818#5161#0" />
-            <element signature="e#5195#5576#0" />
-            <element signature="e#5313#5550#0" />
-            <element signature="e#5611#6621#0" />
-            <element signature="e#6269#6484#0" />
-            <element signature="e#6311#6454#0" />
-            <element signature="e#6516#6595#0" />
-            <element signature="e#6673#6957#0" />
-            <element signature="e#6987#7527#0" />
-            <element signature="e#7109#7178#0" />
-            <element signature="e#7227#7374#0" />
-            <element signature="e#7261#7348#0" />
-            <element signature="e#7424#7505#0" />
-            <element signature="e#7581#7774#0" />
-            <element signature="e#7688#7756#0" />
-            <element signature="e#8349#9189#0" />
-            <element signature="e#8550#8751#0" />
-            <element signature="e#8776#9175#0" />
-            <element signature="e#8915#9157#0" />
-            <element signature="e#9212#9293#0" />
-            <element signature="e#9315#9521#0" />
-            <element signature="e#9451#9507#0" />
+            <element signature="e#137#2894#0" />
+            <element signature="e#363#953#0" />
+            <element signature="e#588#939#0" />
+            <element signature="e#981#1418#0" />
+            <element signature="e#1318#1404#0" />
+            <element signature="e#1444#2790#0" />
+            <element signature="e#1536#2388#0" />
+            <element signature="e#1939#2017#0" />
+            <element signature="e#2046#2110#0" />
+            <element signature="e#2139#2246#0" />
+            <element signature="e#2276#2370#0" />
+            <element signature="e#2425#2776#0" />
+            <element signature="e#2812#2884#0" />
+            <element signature="e#3004#3704#0" />
+            <element signature="e#3365#3689#0" />
+            <element signature="e#3430#3671#0" />
+            <element signature="e#3729#4382#0" />
+            <element signature="e#4006#4368#0" />
+            <element signature="e#4959#5302#0" />
+            <element signature="e#5336#5717#0" />
+            <element signature="e#5454#5691#0" />
+            <element signature="e#5752#6762#0" />
+            <element signature="e#6410#6625#0" />
+            <element signature="e#6452#6595#0" />
+            <element signature="e#6657#6736#0" />
+            <element signature="e#6814#7323#0" />
+            <element signature="e#7073#7301#0" />
+            <element signature="e#7353#8099#0" />
+            <element signature="e#7475#7544#0" />
+            <element signature="e#7593#7740#0" />
+            <element signature="e#7627#7714#0" />
+            <element signature="e#7783#7947#0" />
+            <element signature="e#7826#7921#0" />
+            <element signature="e#7996#8077#0" />
+            <element signature="e#8154#8334#0" />
+            <element signature="e#8248#8316#0" />
+            <element signature="e#8381#10370#0" />
+            <element signature="e#8909#9889#0" />
+            <element signature="e#9110#9311#0" />
+            <element signature="e#9336#9875#0" />
+            <element signature="e#9476#9588#0" />
+            <element signature="e#9615#9857#0" />
+            <element signature="e#9912#9993#0" />
+            <element signature="e#10015#10221#0" />
+            <element signature="e#10151#10207#0" />
+            <element signature="e#10243#10360#0" />
             <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#0;n#title-board#0;n#div#0;n#div#0;n#template#0;n#!!top" />
@@ -1069,6 +1030,9 @@
             <element signature="n#div#1;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#template#0;n#div#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#0;n#template#0;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#template#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#template#1;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
@@ -1077,6 +1041,8 @@
             <element signature="n#action-button-item#0;n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#action-button-item#1;n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#action-button-item#2;n#action-button-container#0;n#div#0;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#template#2;n#div#1;n#div#0;n#template#0;n#!!top" />
@@ -1089,7 +1055,6 @@
             <element signature="n#div#0;n#Poptip#0;n#div#0;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
             <element signature="n#img#0;n#div#0;n#Poptip#0;n#div#0;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#1;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#p#0;n#div#1;n#template#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" />
             <element signature="n#Slider#0;n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" />
@@ -1103,59 +1068,77 @@
             <element signature="n#FormItem#0;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#FormItem#1;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#FormItem#2;n#Form#0;n#Modal#1;n#div#0;n#template#0;n#!!top" />
-            <element signature="e#17647#18460#0" />
-            <element signature="e#17660#18455#0" />
-            <element signature="e#17676#17812#0" />
-            <element signature="e#17828#17864#0" />
-            <element signature="e#17878#17993#0" />
-            <element signature="e#18007#18293#0" />
-            <element signature="e#18037#18071#0" />
-            <element signature="e#18098#18179#0" />
-            <element signature="e#18204#18285#0" />
-            <element signature="e#18309#18430#0" />
-            <element signature="e#18346#18422#0" />
-            <element signature="e#18506#18646#0" />
-            <element signature="e#18673#18790#0" />
-            <element signature="e#18823#18865#0" />
-            <element signature="e#18889#18938#0" />
-            <element signature="e#18969#19059#0" />
-            <element signature="e#19084#19130#0" />
-            <element signature="e#19163#19417#0" />
-            <element signature="e#19281#19409#0" />
-            <element signature="e#19451#19754#0" />
-            <element signature="e#19505#19589#0" />
-            <element signature="e#19640#19746#0" />
-            <element signature="e#19659#19698#0" />
-            <element signature="e#19789#20213#0" />
-            <element signature="e#20243#20658#0" />
-            <element signature="e#20343#20471#0" />
-            <element signature="e#20515#20650#0" />
-            <element signature="e#20686#21056#0" />
-            <element signature="e#20810#20863#0" />
-            <element signature="e#20875#21048#0" />
-            <element signature="e#21085#21173#0" />
-            <element signature="e#21196#21566#0" />
-            <element signature="e#21402#21558#0" />
-            <element signature="e#21421#21460#0" />
-            <element signature="e#21589#22280#0" />
-            <element signature="e#21839#21975#0" />
-            <element signature="e#21858#21897#0" />
-            <element signature="e#21998#22054#0" />
-            <element signature="e#22142#22181#0" />
-            <element signature="e#22313#23019#0" />
-            <element signature="e#22377#23011#0" />
-            <element signature="e#22468#22925#0" />
-            <element signature="e#22533#22913#0" />
-            <element signature="e#22621#22899#0" />
-            <element signature="e#22646#22697#0" />
-            <element signature="e#22951#23003#0" />
-            <element signature="e#23052#23125#0" />
-            <element signature="e#23225#23431#0" />
-            <element signature="e#23320#23423#0" />
-            <element signature="e#23339#23378#0" />
-            <element signature="e#23551#23684#0" />
-            <element signature="e#23621#23671#0" />
-            <element signature="e#23714#23750#0" />
+            <element signature="e#18491#19304#0" />
+            <element signature="e#18504#19299#0" />
+            <element signature="e#18520#18656#0" />
+            <element signature="e#18672#18708#0" />
+            <element signature="e#18722#18837#0" />
+            <element signature="e#18851#19137#0" />
+            <element signature="e#18881#18915#0" />
+            <element signature="e#18942#19023#0" />
+            <element signature="e#19048#19129#0" />
+            <element signature="e#19153#19274#0" />
+            <element signature="e#19190#19266#0" />
+            <element signature="e#19350#19490#0" />
+            <element signature="e#19517#19634#0" />
+            <element signature="e#19667#19709#0" />
+            <element signature="e#19733#19782#0" />
+            <element signature="e#19813#19903#0" />
+            <element signature="e#19928#19974#0" />
+            <element signature="e#20007#20261#0" />
+            <element signature="e#20125#20253#0" />
+            <element signature="e#20295#20598#0" />
+            <element signature="e#20349#20433#0" />
+            <element signature="e#20484#20590#0" />
+            <element signature="e#20503#20542#0" />
+            <element signature="e#20633#21057#0" />
+            <element signature="e#21087#21502#0" />
+            <element signature="e#21187#21315#0" />
+            <element signature="e#21359#21494#0" />
+            <element signature="e#21530#21900#0" />
+            <element signature="e#21654#21707#0" />
+            <element signature="e#21719#21892#0" />
+            <element signature="e#21929#22017#0" />
+            <element signature="e#22040#22410#0" />
+            <element signature="e#22246#22402#0" />
+            <element signature="e#22265#22304#0" />
+            <element signature="e#22685#22815#0" />
+            <element signature="e#22704#22743#0" />
+            <element signature="e#22838#22894#0" />
+            <element signature="e#22982#23021#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/override.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/pages/workspace.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="300" column="9" selection-start-line="300" selection-start-column="9" selection-end-line="300" selection-end-column="9" />
+          <folding>
+            <element signature="e#39#323#0" />
+            <element signature="e#244#317#0" />
+            <element signature="e#346#743#0" />
+            <element signature="e#368#737#0" />
+            <element signature="e#455#727#0" />
+            <element signature="e#615#713#0" />
+            <element signature="n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#title-board#0;n#div#0;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#action-button-container#0;n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#action-button-item#0;n#action-button-container#0;n#div#1;n#div#0;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#Col#0;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#Alert#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#template#0;n#Alert#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
+            <element signature="n#image-card#0;n#template#0;n#div#0;n#panel#0;n#div#0;n#Col#1;n#Row#0;n#template#0;n#!!top" />
           </folding>
         </state>
       </provider>

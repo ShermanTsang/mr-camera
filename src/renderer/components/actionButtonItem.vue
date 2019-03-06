@@ -40,8 +40,7 @@
             }
 
             &:hover {
-                letter-spacing: 2px;
-                box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+                box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2);
             }
     }
 </style>

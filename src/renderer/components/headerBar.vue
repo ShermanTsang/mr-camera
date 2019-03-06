@@ -179,6 +179,7 @@ export default {
               console.log(err);
             }
             this.$Message.success(`${numRemoved}条数据已经全部清空`);
+            this.$router.push({name: 'index'});
           });
         },
         onCancel: () => {

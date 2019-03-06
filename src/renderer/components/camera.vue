@@ -167,7 +167,7 @@
                      class="camera-preview-image">
             </div>
             <div slot="footer" style="text-align: center">
-                <Button v-if="status.step === 'cropper'" type="err" @click="status.workPanel = false"
+                <Button v-if="status.step === 'cropper'" type="error" @click="status.workPanel = false"
                         icon="md-trash">重新拍摄
                 </Button>
                 <Button v-if="status.step === 'confirm' && config.mode === 'cropper'" type="warning"
@@ -206,7 +206,7 @@
 export default {
   name: 'camera',
   props: {
-    object: {
+    selectedItem: {
       default: null
     }
   },
@@ -223,9 +223,6 @@ export default {
         mode: 'preview',
         format: 'jpeg',
         countdown: 0
-      },
-      data: {
-        object: {}
       },
       camera: {
         videoWidth: 1920,
@@ -244,9 +241,8 @@ export default {
   methods: {
     clickTakePhotoBtn() {
       this.clearCamera();
-      if (this.object.id === undefined) {
-        this.$Message.info('请先在右侧选择/创建拍摄对象');
-        return false;
+      if (!this.selectedItem.id) {
+        this.$emit('add-default-item');
       }
       const {countdown} = this.config;
       this.status.countdown = countdown;
@@ -289,18 +285,20 @@ export default {
       this.status.step = 'confirm';
     },
     confirmResult() {
-      let img = new Image();
-      img.src = this.photo.result;
-      img.onload = () => {
-        const result = {
-          photo: this.config.mode === 'cropper' ? this.photo.result : this.photo.capture,
-          isOverwritten: this.status.isOverwritten,
-          width: img.width,
-          height: img.height,
-          format: this.config.format
+      setTimeout(() => {
+        let img = new Image();
+        img.src = this.photo.result;
+        img.onload = () => {
+          const result = {
+            photo: this.config.mode === 'cropper' ? this.photo.result : this.photo.capture,
+            isOverwritten: this.status.isOverwritten,
+            width: img.width,
+            height: img.height,
+            format: this.config.format
+          };
+          this.$emit('confirm', result);
         };
-        this.$emit('confirm', result);
-      };
+      }, 300);
     },
     clearCamera() {
       this.photo.capture = null;
