@@ -285,16 +285,26 @@ export default {
       this.status.step = 'confirm';
     },
     confirmResult() {
+      const {scheme, album, id, name, path} = this.selectedItem;
       setTimeout(() => {
         let img = new Image();
         img.src = this.photo.result;
         img.onload = () => {
           const result = {
-            photo: this.config.mode === 'cropper' ? this.photo.result : this.photo.capture,
-            isOverwritten: this.status.isOverwritten,
+            scheme,
+            album,
+            id,
+            name,
+            path,
+            base64: this.config.mode === 'cropper' ? this.photo.result : this.photo.capture,
             width: img.width,
             height: img.height,
-            format: this.config.format
+            format: this.config.format,
+            shotStatus: 1,
+            saveStatus: 0,
+            updateStatus: this.isOverwritten ? 1 : 0,
+            time: this.$moment().format('YYYY-MM-DD HH:mm:ss'),
+            size: this.base64Length(this.config.mode === 'cropper' ? this.photo.result : this.photo.capture)
           };
           this.$emit('confirm', result);
         };
@@ -320,8 +330,8 @@ export default {
       event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
       downloadImage.dispatchEvent(event, {bubbles: true, cancelable: true, view: window});
     },
-    base64ToBlob(code) {
-      let parts = code.split(';base64,');
+    base64ToBlob(base64Str) {
+      let parts = base64Str.split(';base64,');
       let contentType = parts[0].split(':')[1];
       let raw = window.atob(parts[1]);
       let rawLength = raw.length;
@@ -330,6 +340,15 @@ export default {
         uInt8Array[i] = raw.charCodeAt(i);
       }
       return new Blob([uInt8Array], {type: contentType});
+    },
+    base64Length(base64Str) {
+      let str = base64Str.split(',')[1];
+      let equalIndex = str.indexOf('=');
+      if (str.indexOf('=') > 0) {
+        str = str.substring(0, equalIndex);
+      }
+      let strLength = str.length;
+      return parseInt(strLength - (strLength / 8) * 2);
     },
     countdownSecond() {
       this.status.timer = setInterval(() => {

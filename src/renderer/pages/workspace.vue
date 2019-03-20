@@ -68,7 +68,7 @@
             <div class="header">
                 <div class="header-item">
                     <title-board>
-                        {{data.album.name}}
+                        {{data.currentAlbum.name}}
                     </title-board>
                 </div>
                 <div class="header-item">
@@ -82,7 +82,7 @@
             </div>
             <div class="panel-container">
                 <camera ref="camera"
-                        :selectedItem="data.photo"
+                        :selectedItem="data.currentPhoto"
                         @click-take-photo-btn="checkPhoto"
                         @add-default-item="addPhotoItem"
                         @confirm="confirmResult">
@@ -95,7 +95,7 @@
                     <title-board>
                         相片列表
                         <span slot="right">
-                            <Button icon="md-add" size="small" @click="addPhotoItem">拍摄对象</Button>
+                            <Button icon="md-add" size="small" @click="addPhotoItem('')">拍摄对象</Button>
                             <Button icon="ios-add-circle-outline" size="small"
                                     @click="status.addBatchPhotoItemPanel = true">批量添加</Button>
                         </span>
@@ -118,9 +118,10 @@
                                         :key="item.id"
                                         :id="item.id"
                                         :name.sync="item.name"
-                                        :photo="item.photo"
-                                        :active="item.id === data.photo.id"
-                                        @modify-name="modifyItemName"
+                                        :path="item.path ? item.path : item.base64"
+                                        :active="item.id === data.currentPhoto.id"
+                                        @on-focus="data.oldPhotoName = item.name"
+                                        @on-blur="modifyItemName"
                                         @click.native="selectPhotoItem(item)">
                                 <div slot="status">
                                     <Tag color="primary" v-if="item.saveStatus === 1">图库中</Tag>
@@ -178,18 +179,14 @@ export default {
         tabType: 'todo'
       },
       data: {
-        album: {},
-        photo: {},
+        currentAlbum: {},
+        currentPhoto: {},
+        oldPhotoName: '',
         photoList: [],
         batchInput: ''
       },
       config: {
-        batchDivider: [','],
-        pageControl: {
-          defaultPageSize: 15,
-          totalCount: 0,
-          offset: 0
-        }
+        batchDivider: [',']
       },
       params: {
         keyword: '',
@@ -246,14 +243,14 @@ export default {
           }
         });
       } else {
-        this.$router.push({name: 'home', query: {'albumId': this.data.album.id}});
+        this.$router.push({name: 'home', query: {'albumId': this.data.currentAlbum.id}});
       }
     },
     redirectPage(pageName) {
-      this.$router.push({name: pageName, params: {albumItem: this.data.album}});
+      this.$router.push({name: pageName, params: {albumItem: this.data.currentAlbum}});
     },
     checkPhoto() {
-      const {shotStatus} = this.data.photo;
+      const {shotStatus} = this.data.currentPhoto;
       if (shotStatus === 1) {
         this.$Modal.confirm({
           title: '当前对象已拍摄过，确定重拍？',
@@ -270,17 +267,19 @@ export default {
       }
       this.$refs.camera.runCamera();
     },
-    addPhotoItem(name = '') {
+    addPhotoItem(name) {
       const newPhoto = {
         scheme: 'photoList',
-        album: this.data.album.id,
+        album: this.data.currentAlbum.id,
         id: this.$getId(),
-        name,
+        name: name,
         photo: '',
+        path: '',
         width: '',
         height: '',
         format: '',
         time: '',
+        size: '',
         shotStatus: 0,
         saveStatus: 0,
         updateStatus: 0
@@ -296,31 +295,68 @@ export default {
         this.$Message.error('批量添加的内容不能为空');
         return false;
       }
-      batchItemList.forEach(item => {
-        this.addPhotoItem(item);
+      batchItemList.forEach(itemName => {
+        this.addPhotoItem(itemName);
       });
       this.$Message.success(`已成功批量添加了 ${batchItemList.length}个 拍摄对象！`);
       this.data.batchInput = '';
     },
     selectPhotoItem(photoItem) {
-      this.data.photo = photoItem;
+      this.data.currentPhoto = photoItem;
     },
-    modifyItemName(name) {
-      const {id} = this.data.photo;
-      this.$db.update({
-        scheme: 'photoList',
-        album: this.data.album.id,
-        id
-      }, {$set: {name: name}}, {}, (err, docs) => {
-        if (err) {
-          console.log(err);
-        }
-      });
+    getValidFileName(name) {
+      const {id, format} = this.data.currentPhoto;
+      const regex = /[<>:'|*？/\\]/g;
+      const validName = this.data.currentPhoto.name = name.replace(regex, '').trim();
+      const testPath = this.$path.join(this.data.currentAlbum.directoryPath, `${validName}.${format}`);
+      if (regex.test(name)) {
+        this.$Message.warning('文件名不能包含非法字符！已自动去除。');
+      }
+      if (this.$fs.existsSync(testPath)) {
+        this.$Message.warning('文件名不能重复！已自动处理。');
+        const uniqueName = `${validName} - ${id}`;
+        this.data.currentPhoto.name = uniqueName;
+        return uniqueName;
+      }
+      return validName;
+    },
+    modifyItemName() {
+      if (this.data.oldPhotoName === this.data.currentPhoto.name) { return false; }
+      const {id, name, path, saveStatus, format} = this.data.currentPhoto;
+      const newName = this.getValidFileName(name);
+      const newPath = this.$path.join(this.$path.dirname(path), `${newName}.${format}`);
+      if (saveStatus === 0) {
+        this.$db.update({
+          scheme: 'photoList',
+          album: this.data.currentAlbum.id,
+          id
+        }, {$set: {name: newName}}, {}, (err, docs) => {
+          if (err) {
+            console.log(err);
+          }
+        });
+      } else {
+        this.$db.update({
+          scheme: 'photoList',
+          album: this.data.currentAlbum.id,
+          id
+        }, {$set: {name: newName, path: newPath}}, {}, (err, docs) => {
+          if (err) {
+            console.log(err);
+          }
+          this.$fs.rename(path, newPath, (err) => {
+            if (err) {
+              console.log(err);
+            }
+            this.$set(this.data.currentPhoto, 'path', newPath);
+          });
+        });
+      }
     },
     queryPhotoList() {
       this.status.loadingPhotoList = true;
       const {current, pageSize} = this.params.page;
-      const {id} = this.data.album;
+      const {id} = this.data.currentAlbum;
       const skipNum = (current - 1) * pageSize;
       const photoNotSavedList = this.data.photoList.filter(item => {
         return item.saveStatus === 0;
@@ -329,7 +365,7 @@ export default {
         if (err) {
           console.log(err);
         }
-        this.data.album.total = this.params.page.total = count;
+        this.data.currentAlbum.total = this.params.page.total = count;
       });
       this.$db.find({
         scheme: 'photoList',
@@ -343,45 +379,51 @@ export default {
       });
     },
     getPhotoIndex(photoId = null) {
-      const id = photoId === null ? this.data.photo.id : photoId;
+      const id = photoId === null ? this.data.currentPhoto.id : photoId;
       return this.data.photoList.findIndex(item => {
         return item.id === id;
       });
     },
     getNotSavedList() {
-      const {id} = this.data.album;
+      const {id} = this.data.currentAlbum;
       return this.data.photoList.filter(item => {
-        return item.album === id && item.saveStatus === 0 && item.photo !== '';
+        return item.album === id && item.saveStatus === 0 && item.base64 !== '';
       });
     },
     getNotUpdatedList() {
-      const {id} = this.data.album;
+      const {id} = this.data.currentAlbum;
       return this.data.photoList.filter(item => {
-        return item.album === id && item.updateStatus === 1 && item.photo !== '';
+        return item.album === id && item.updateStatus === 1 && item.base64 !== '';
       });
     },
-    confirmResult(result) {
-      const {photo, isOverwritten, height, width, format} = result;
+    confirmResult(item) {
       let index = this.getPhotoIndex();
       if (index === -1) {
         this.addPhotoItem();
         index = this.data.photoList.length - 1;
       }
-      this.$set(this.data.photoList[index], 'photo', photo);
-      this.$set(this.data.photoList[index], 'height', height);
-      this.$set(this.data.photoList[index], 'width', width);
-      this.$set(this.data.photoList[index], 'format', format);
-      this.$set(this.data.photoList[index], 'time', this.$moment().format('YYYY-MM-DD HH:mm:ss'));
-      this.$set(this.data.photoList[index], 'shotStatus', 1);
-      this.$set(this.data.photoList[index], 'updateStatus', isOverwritten ? 1 : 0);
+      this.data.photoList.splice(index, 1, item);
       this.$refs.camera.status.workPanel = false;
     },
-    savePhotoItem(photoItem = {}) {
-      const index = this.getPhotoIndex(photoItem.id);
-      this.$set(this.data.photoList[index], 'saveStatus', 1);
-      const newPhoto = this.data.photoList[index];
-      this.$db.insert(newPhoto, () => {
-        this.$Message.success('拍摄结果保存成功！');
+    savePhotoItem(item = {}) {
+      const index = this.getPhotoIndex(item.id);
+      const newPhotoItem = this.data.photoList[index];
+      const storePath = this.$path.join(this.data.currentAlbum.directoryPath, `${newPhotoItem.name || `未命名 ${newPhotoItem.id}`}.${newPhotoItem.format}`);
+      this.$set(newPhotoItem, 'saveStatus', 1);
+      this.$set(newPhotoItem, 'path', storePath);
+      const base64Data = newPhotoItem.base64.replace(/^data:image\/\w+;base64,/, '');
+      const dataBuffer = Buffer.alloc(newPhotoItem.size, base64Data, 'base64');
+      this.$fs.writeFile(storePath, dataBuffer, (err) => {
+        if (err) {
+          console.log(err);
+          this.$Message.success('拍摄结果保存失败！');
+        } else {
+          this.$set(newPhotoItem, 'base64', '');
+          this.$db.insert(newPhotoItem, () => {
+            this.$Message.success('拍摄结果保存成功！');
+            this.queryPhotoList();
+          });
+        }
       });
     },
     updatePhotoItem(photoItem = {}) {
@@ -397,11 +439,10 @@ export default {
     },
     saveAllItem() {
       const notSavedList = this.getNotSavedList();
-      const saveList = notSavedList.map(item => {
+      notSavedList.forEach(item => {
         item.saveStatus = 1;
-        return item;
+        this.savePhotoItem(item);
       });
-      this.$db.insert(saveList);
     },
     updateAllItem() {
       const notUpdatedList = this.getNotUpdatedList();
@@ -413,14 +454,15 @@ export default {
     },
     deletePhotoItem(photoItem) {
       const index = this.getPhotoIndex(photoItem.id);
-      this.$db.remove({scheme: 'photoList', album: this.data.album.id, id: photoItem.id}, () => {
+      this.$db.remove({scheme: 'photoList', album: this.data.currentAlbum.id, id: photoItem.id}, () => {
         this.$Message.success('拍摄对象删除成功！');
       });
       this.data.photoList.splice(index, 1);
+      this.data.currentPhoto = {};
     }
   },
   mounted() {
-    this.data.album = this.$route.params.albumItem || {};
+    this.data.currentAlbum = this.$route.params.albumItem || {};
     this.queryPhotoList();
   }
 };

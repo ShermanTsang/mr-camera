@@ -128,6 +128,12 @@
                     </div>
                     <div class="setting-item-name">清空数据</div>
                 </div>
+                <div class="setting-item" @click="deleteAllFiles()">
+                    <div class="setting-item-icon">
+                        <Icon type="ios-trash-outline"/>
+                    </div>
+                    <div class="setting-item-name">清空数据</div>
+                </div>
             </div>
         </Modal>
     </header>
@@ -172,7 +178,7 @@ export default {
     emptyAllData() {
       this.$Modal.confirm({
         title: '确认清空所有数据吗？',
-        content: '未保存到本地的图片和相册将全被删除',
+        content: '相册和数据文件将全部删除',
         onOk: () => {
           this.$db.remove({}, { multi: true }, (err, numRemoved) => {
             if (err) {
@@ -181,6 +187,18 @@ export default {
             this.$Message.success(`${numRemoved}条数据已经全部清空`);
             this.$router.push({name: 'index'});
           });
+        },
+        onCancel: () => {
+          this.$Message.info('已取消清空数据');
+        }
+      });
+    },
+    deleteAllFiles() {
+      this.$Modal.confirm({
+        title: '确认删除所有图片吗？',
+        content: '保存在本地的图片将全部删除',
+        onOk: () => {
+          this.$router.push({name: 'index'});
         },
         onCancel: () => {
           this.$Message.info('已取消清空数据');

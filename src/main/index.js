@@ -1,6 +1,6 @@
 'use strict';
 
-import {app, Menu, ipcMain, BrowserWindow, screen, Tray} from 'electron';
+import {app, Menu, ipcMain, BrowserWindow, screen, Tray, dialog} from 'electron';
 import path from 'path';
 
 if (process.env.NODE_ENV !== 'development') {
@@ -18,7 +18,56 @@ const winURL = process.env.NODE_ENV === 'development'
 app.on('ready', () => {
   const {width, height} = screen.getPrimaryDisplay().workAreaSize;
   createMainWindow(width - 300, height - 100);
+  registerIPC();
+  registerTray();
+});
+app.on('quit', () => {
+  if (process.platform !== 'darwin') {
+    app.quit();
+  }
+});
+app.on('activate', () => {
+  if (mainWindow === null) {
+    createMainWindow();
+  }
+});
 
+const registerIPC = function() {
+  ipcMain.on('min', event => mainWindow.minimize());
+  ipcMain.on('max', event => {
+    if (mainWindow.isMaximized()) {
+      mainWindow.unmaximize();
+    } else {
+      mainWindow.maximize();
+    }
+  });
+  ipcMain.on('pin', event => {
+    if (mainWindow.isAlwaysOnTop()) {
+
+    } else {
+      mainWindow.setAlwaysOnTop(1);
+    }
+  });
+  ipcMain.on('close', event => mainWindow.close());
+  ipcMain.on('createWebWindow', (e, url, title) => {
+    const {width, height} = screen.getPrimaryDisplay().workAreaSize;
+    createWebWindow(width - 400, height - 200, url, title);
+  });
+  ipcMain.on('openDirectoryDialog', event => {
+    dialog.showOpenDialog({
+      defaultPath: app.getPath('pictures'),
+      properties: [
+        'openDirectory'
+      ]
+    }, (directoryPath) => {
+      if (directoryPath) {
+        event.sender.send('selectedDirectory', directoryPath);
+      }
+    });
+  });
+};
+
+const registerTray = function() {
   const trayIcon = path.join(__dirname, '/resource/icon.ico');
   tray = new Tray(trayIcon);
   const contextMenu = Menu.buildFromTemplate([
@@ -39,39 +88,7 @@ app.on('ready', () => {
   ]);
   tray.setToolTip('相机先生 Mr.Camera');
   tray.setContextMenu(contextMenu);
-});
-
-app.on('quit', () => {
-  if (process.platform !== 'darwin') {
-    app.quit();
-  }
-});
-app.on('activate', () => {
-  if (mainWindow === null) {
-    createMainWindow();
-  }
-});
-
-ipcMain.on('min', e => mainWindow.minimize());
-ipcMain.on('max', e => {
-  if (mainWindow.isMaximized()) {
-    mainWindow.unmaximize();
-  } else {
-    mainWindow.maximize();
-  }
-});
-ipcMain.on('pin', e => {
-  if (mainWindow.isAlwaysOnTop()) {
-
-  } else {
-    mainWindow.setAlwaysOnTop(1);
-  }
-});
-ipcMain.on('close', e => mainWindow.close());
-ipcMain.on('createWebWindow', (e, url, title) => {
-  const {width, height} = screen.getPrimaryDisplay().workAreaSize;
-  createWebWindow(width - 400, height - 200, url, title);
-});
+};
 
 function createMainWindow(width = 980, height = 680) {
   Menu.setApplicationMenu(null);

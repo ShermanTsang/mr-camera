@@ -5,6 +5,8 @@ import router from './router';
 import store from './store';
 import iView from 'iview';
 import db from './datastore';
+import fs from 'fs';
+import path from 'path';
 import vueCropper from 'vue-cropper';
 import moment from 'moment';
 import kebabCase from 'lodash/kebabCase';
@@ -18,13 +20,22 @@ Vue.use(iView);
 Vue.use(vueCropper);
 
 Vue.http = Vue.prototype.$http = axios;
+Vue.prototype.$fs = fs;
 Vue.prototype.$db = db;
+Vue.prototype.$path = path;
+Vue.prototype.$moment = moment;
 Vue.prototype.$getId = () => {
   return Number(Math.random().toString().substr(3, length) + Date.now()).toString(36);
 };
-Vue.prototype.$moment = moment;
+
 Vue.filter('dateFormat', function(dataStr, pattern = 'YYYY-MM-DD HH:mm:ss') {
   return moment(dataStr).format(pattern);
+});
+
+Vue.mixin({
+  destroyed() {
+    // console.clear();
+  }
 });
 
 const nextComponents = require.context('./components', true, /\.vue$/);
@@ -48,7 +59,7 @@ require('electron').webFrame.setZoomFactor(zoomFactor);
 
 /* eslint-disable no-new */
 new Vue({
-  components: { App },
+  components: {App},
   router,
   store,
   template: '<App/>'

@@ -58,10 +58,10 @@
 <template>
     <div class="image-card-container" :class="{'image-card-active':this.active}">
         <div class="image-card-body">
-            <div class="image-card-image" :style="{background:'url('+photo+')'}">
-                <Poptip v-if="photo !== ''" trigger="hover" :transfer="true" style="width: 100%;height: 100%;">
+            <div class="image-card-image" :style="{background:'url('+path+')'}">
+                <Poptip v-if="path !== ''" trigger="hover" :transfer="true" style="width: 100%;height: 100%;">
                     <div slot="content">
-                        <img :src="photo"
+                        <img :src="path"
                              :style="{minHeight: '100px',maxHeight: '180px',boxShadow: '0 0 10px rgba(0,0,0,.2)',borderRadius: '2px'}">
                     </div>
                 </Poptip>
@@ -69,7 +69,7 @@
             </div>
             <div class="image-card-content">
                 <div class="image-name">
-                    <Input @on-blur="modifyName" v-model="currentName" :placeholder="`未命名对象 #${id}`"/>
+                    <Input @on-focus="$emit('on-focus')" @on-blur="$emit('on-blur')" v-model="currentName" :placeholder="`未命名对象 #${id}`"/>
                 </div>
                 <div class="image-info">
                     <slot name="info"></slot>
@@ -92,7 +92,7 @@ export default {
     active: {
       default: false
     },
-    photo: {
+    path: {
       default: ''
     },
     name: {
@@ -105,12 +105,8 @@ export default {
       currentName: ''
     };
   },
-  mounted() {
-    this.currentName = this.name;
-  },
   methods: {
     handleClick() {
-      this.$emit('click');
       if (this.showLarge !== undefined) {
         this.showLargeViaModal();
       }
@@ -118,22 +114,12 @@ export default {
     imageError() {
       this.image = require('../assets/images/imagePlaceholder.png');
     },
-    downloadImage() {
-      const downloadTarget = document.createElement('a');
-      downloadTarget.href = this.url;
-      downloadTarget.target = '_blank';
-      downloadTarget.download = `图片(${Date.now().toString(36)}) - 相机先生`;
-      downloadTarget.click();
-    },
     showLargeViaModal() {
       this.$Modal.confirm({
         title: '查看大图',
         cancelText: '关闭',
         okText: '保存到本地',
         width: 800,
-        onOk: () => {
-          this.downloadImage();
-        },
         closable: true,
         render: (h) => {
           return [
@@ -158,10 +144,10 @@ export default {
           ];
         }
       });
-    },
-    modifyName() {
-      this.$emit('modify-name', this.currentName);
     }
+  },
+  mounted() {
+    this.currentName = this.name;
   },
   watch: {
     name(value) {

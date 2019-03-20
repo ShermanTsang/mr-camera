@@ -69,7 +69,6 @@ export default {
     });
     this.config.innerWidth = window.innerWidth;
     this.config.innerHeight = window.innerHeight;
-    console.clear();
   },
   updated() {
     this.route = this.$route;

@@ -239,6 +239,7 @@
                                 border-bottom: 1px dashed #ccc;
                             }
                         }
+
                         .photo-item-main-action {
                             transform: translateY(0);
                         }
@@ -291,17 +292,9 @@
                     font-size: .95rem;
                     cursor: default;
 
-                    &-name{
-                        margin-bottom:10px;
+                    &-name {
+                        margin-bottom: 10px;
                         letter-spacing: 1px;
-                    }
-
-                    span {
-                        cursor: default;
-                        font-size: .9rem;
-                        padding: 2px 10px;
-                        border: 1px solid #ccc;
-                        border-radius: 10px;
                     }
                 }
             }
@@ -325,6 +318,15 @@
                 box-shadow: 0 -4px 10px rgba(177, 177, 177, .4);
                 background: #ffffff;
             }
+        }
+
+        .tag{
+            cursor: default;
+            font-size: .9rem;
+            padding: 4px 10px;
+            color: #999;
+            border: 1px solid #ccc;
+            border-radius: 10px;
         }
     }
 </style>
@@ -350,7 +352,7 @@
                 </div>
                 <Spin v-if="status.loadingAlbumList"></Spin>
                 <template v-else>
-                    <div class="album-item" :class="{'album-item-active':data.album.id === item.id}"
+                    <div class="album-item" :class="{'album-item-active':data.currentAlbum.id === item.id}"
                          v-for="item in data.albumList" :key="item.id" @click="selectAlbumItem(item)">
                         <div class="album-item-name">
                             <Icon type="ios-lock-outline" v-show="item.password" size="20"/>
@@ -364,18 +366,18 @@
             </div>
         </div>
         <div class="album-right">
-            <template v-if="!data.album.id">
+            <template v-if="!data.currentAlbum.id">
                 <div class="album-tip">
                     <Icon type="md-images" size="60"/>
                     <br>
                     请从左侧选择相册
                 </div>
             </template>
-            <template v-else-if="form.checkAlbumPassword.password !== data.album.password">
+            <template v-else-if="form.checkAlbumPassword.password !== data.currentAlbum.password">
                 <div class="album-tip">
                     <Icon type="ios-lock-outline" size="60"/>
                     <br>
-                    {{data.album.name}}
+                    {{data.currentAlbum.name}}
                     <br>
                     <input placeholder="请输入相册密码" v-model="form.checkAlbumPassword.password" type="password"/>
                 </div>
@@ -383,23 +385,27 @@
             <template v-else>
                 <div class="album-header">
                     <div class="album-name">
-                        {{data.album.name}} <span>{{data.album.total || 0}}</span>
+                        {{data.currentAlbum.name}} <span>{{data.currentAlbum.total || 0}}</span>
                     </div>
                     <div class="album-page">
                         <Page :current.sync="params.page.current" :total="params.page.total"
                               :page-size="params.page.pageSize" simple show-sizer
                               @on-change="queryPhotoList"/>
                     </div>
-                    <action-button-container v-if="form.checkAlbumPassword.password === data.album.password">
+                    <action-button-container v-if="form.checkAlbumPassword.password === data.currentAlbum.password">
                         <action-button-item @click="redirectPage('workspace')">
                             <Icon type="ios-camera-outline" size="28" color="#999"/>
                             开始拍照
                         </action-button-item>
-                        <action-button-item @click="editAlbumItem(data.album)">
+                        <action-button-item @click="syncWithLocal(data.currentAlbum)">
+                            <Icon type="ios-build-outline" size="28" color="#999"/>
+                            与本地同步
+                        </action-button-item>
+                        <action-button-item @click="editAlbumItem(data.currentAlbum)">
                             <Icon type="ios-build-outline" size="28" color="#999"/>
                             设置
                         </action-button-item>
-                        <action-button-item @click="deleteAlbumItem(data.album)">
+                        <action-button-item @click="deleteAlbumItem(data.currentAlbum)">
                             <Icon type="ios-trash-outline" size="28" color="#999"/>
                             删除
                         </action-button-item>
@@ -408,13 +414,13 @@
                 <div class="album-main scrollable">
                     <Spin size="large" fix v-if="status.loadingPhotoList"></Spin>
                     <div v-for="item in data.photoList" :key="item.id" class="photo-item"
-                         :class="{'photo-item-active': item.id === data.photo.id}"
+                         :class="{'photo-item-active': item.id === data.currentPhoto.id}"
                          @click="selectPhotoItem(item)">
                         <div class="photo-item-main"
                              :style="{width:config.photoItemSize+'px',height:config.photoItemSize+'px'}">
                             <div class="photo-item-main-mask"></div>
                             <div class="photo-item-main-image">
-                                <img :src="item.photo">
+                                <img :src="item.path">
                             </div>
                             <div class="photo-item-main-action">
                                 <Icon size="26" type="md-trash" @click="deletePhotoItem(item)"/>
@@ -423,28 +429,30 @@
                             </div>
                         </div>
                         <div class="photo-item-name">
-                            <Input @on-blur="modifyPhotoItemName" v-model="item.name" :placeholder="`未命名`"/>
+                            <Input @on-focus="data.oldPhotoName = item.name" @on-blur="modifyPhotoItemName" v-model="item.name" :placeholder="`未命名`"/>
                         </div>
                     </div>
                 </div>
             </template>
         </div>
-        <div class="album-tool" v-if="data.album !== {}">
+        <div class="album-tool" v-if="data.currentAlbum !== {}">
             <div class="album-tool-select">
-                <template v-if="data.photo.id">
-                    <div class="album-tool-select-photo" :style="{background:'url('+data.photo.photo+')'}">
+                <template v-if="data.currentPhoto.id">
+                    <div class="album-tool-select-photo" :style="{background:'url('+data.currentPhoto.path+')'}">
                         <Poptip trigger="hover" :transfer="true" style="width: 100%;height: 100%;">
                             <div slot="content">
-                                <img :src="data.photo.photo"
+                                <img :src="data.currentPhoto.path"
                                      :style="{minHeight: '200px',maxHeight: '300px',boxShadow: '0 0 10px rgba(0,0,0,.2)',borderRadius: '4px'}">
                             </div>
                         </Poptip>
                     </div>
                     <div class="album-tool-select-info">
-                        <div class="album-tool-select-info-name">{{data.photo.name || `未命名 ${data.photo.id}`}}</div>
-                        <span>{{data.photo.width || 'width'}} x {{data.photo.height || 'height'}} px</span>
-                        <span>{{data.photo.format || 'format'}}</span>
-                        <span>{{data.photo.time || 'time'}}</span>
+                        <div class="album-tool-select-info-name">{{data.currentPhoto.name || `未命名
+                            ${data.currentPhoto.id}`}}
+                        </div>
+                        <span class="tag">{{data.currentPhoto.width || 'width'}} x {{data.currentPhoto.height || 'height'}} px</span>
+                        <span class="tag">{{data.currentPhoto.format || 'format'}}</span>
+                        <span class="tag">{{data.currentPhoto.time || 'time'}}</span>
                     </div>
                 </template>
             </div>
@@ -463,6 +471,10 @@
                 </FormItem>
                 <FormItem label="相册描述">
                     <Input v-model="form.createAlbumItem.description"></Input>
+                </FormItem>
+                <FormItem label="相册路径" required>
+                    <Button type="primary" @click="$electron.ipcRenderer.send('openDirectoryDialog')">选择路径</Button>
+                    <span class="tag">{{form.createAlbumItem.directoryPath || ''}}</span>
                 </FormItem>
                 <FormItem label="相册密码">
                     <Input v-model="form.createAlbumItem.password"></Input>
@@ -500,8 +512,9 @@ export default {
         photoItemSize: 200
       },
       data: {
-        album: {},
-        photo: {},
+        currentAlbum: {},
+        currentPhoto: {},
+        oldPhotoName: '',
         albumCount: 0,
         albumList: [],
         photoList: []
@@ -513,7 +526,8 @@ export default {
         createAlbumItem: {
           name: '',
           description: '',
-          password: ''
+          password: '',
+          directoryPath: ''
         },
         editAlbumItem: {
           name: '',
@@ -535,17 +549,17 @@ export default {
   methods: {
     selectAlbumItem(albumItem) {
       this.clearLastAlbumItem();
-      this.data.album = albumItem;
+      this.data.currentAlbum = albumItem;
       this.queryPhotoList();
       this.params.page.current = 1;
     },
+    selectPhotoItem(photoItem) {
+      this.data.currentPhoto = photoItem;
+    },
     clearLastAlbumItem() {
       this.form.checkAlbumPassword.password = '';
-      this.data.photo = {};
+      this.data.currentPhoto = {};
       this.data.photoList = [];
-    },
-    selectPhotoItem(photoItem) {
-      this.data.photo = photoItem;
     },
     createAlbumItem() {
       this.status.createAlbumItem = true;
@@ -557,18 +571,11 @@ export default {
     formatSepText(val) {
       return '图片缩略图尺寸: ' + val + '像素';
     },
-    deletePhotoItem(photoItem) {
-      const {id} = photoItem;
-      this.$db.remove({scheme: 'photoList', album: this.data.album.id, id}, {}, () => {
-        this.data.photoList.splice(this.data.photoList.indexOf(photoItem), 1);
-        this.$Message.success(`删除成功！`);
-      });
-    },
     collectPhotoItem(photoItem) {
       const {id} = photoItem;
       this.$db.update({
         scheme: 'photoList',
-        album: this.data.album.id,
+        album: this.data.currentAlbum.id,
         id
       }, {$set: {isCollected: true}}, {}, (err, count) => {
         if (err) {
@@ -587,13 +594,14 @@ export default {
       saveLink.dispatchEvent(event);
     },
     submitCreateAlbumItem() {
-      const {name, description, password} = this.form.createAlbumItem;
+      const {name, description, password, directoryPath} = this.form.createAlbumItem;
       const newAlbumItem = {
         scheme: 'albumList',
         id: this.$getId().toString(),
         name,
         description,
-        password
+        password,
+        directoryPath
       };
       this.$db.insert(newAlbumItem, () => {
         this.status.createAlbumItem = false;
@@ -613,7 +621,7 @@ export default {
       });
     },
     redirectPage(pageName) {
-      this.$router.push({name: pageName, params: {albumItem: this.data.album}});
+      this.$router.push({name: pageName, params: {albumItem: this.data.currentAlbum}});
     },
     queryAlbumList() {
       this.status.loadingAlbumList = true;
@@ -630,13 +638,13 @@ export default {
     queryPhotoList() {
       this.status.loadingPhotoList = true;
       const {current, pageSize} = this.params.page;
-      const {id} = this.data.album;
+      const {id} = this.data.currentAlbum;
       const skipNum = (current - 1) * pageSize;
       this.$db.count({scheme: 'photoList', album: id}, (err, count) => {
         if (err) {
           console.log(err);
         }
-        this.data.album.total = this.params.page.total = count;
+        this.data.currentAlbum.total = this.params.page.total = count;
       });
       this.$db.find({
         scheme: 'photoList',
@@ -646,20 +654,60 @@ export default {
           console.log(err);
         }
         this.data.photoList = docs;
-        console.log(docs);
         this.status.loadingPhotoList = false;
       });
     },
+    getValidFileName(name) {
+      const {id, format} = this.data.currentPhoto;
+      const regex = /[<>:'|*？/\\]/g;
+      const validName = this.data.currentPhoto.name = name.replace(regex, '').trim();
+      const testPath = this.$path.join(this.data.currentAlbum.directoryPath, `${validName}.${format}`);
+      if (regex.test(name)) {
+        this.$Message.warning('文件名不能包含非法字符！已自动去除。');
+      }
+      if (this.$fs.existsSync(testPath)) {
+        this.$Message.warning('文件名不能重复！已自动处理。');
+        const uniqueName = `${validName} - ${id}`;
+        this.data.currentPhoto.name = uniqueName;
+        return uniqueName;
+      }
+      return validName;
+    },
     modifyPhotoItemName() {
-      const {id, name, album} = this.data.photo;
+      if (this.data.oldPhotoName === this.data.currentPhoto.name) { return false; }
+      const {id, name, album, path, format} = this.data.currentPhoto;
+      const newName = this.getValidFileName(name);
+      const newPath = this.$path.join(this.$path.dirname(path), `${newName}.${format}`);
       this.$db.update({
         scheme: 'photoList',
         album,
         id
-      }, {$set: {name}}, {}, (err, docs) => {
+      }, {$set: {name: newName, path: newPath}}, {}, (err, docs) => {
         if (err) {
           console.log(err);
         }
+        this.$fs.rename(path, newPath, (err) => {
+          if (err) {
+            console.log(err);
+          }
+          this.$set(this.data.currentPhoto, 'path', newPath);
+        });
+      });
+    },
+    syncWithLocal() {
+      this.data.photoList.map((item) => {
+        this.$fs.exists(item.path, (isExist) => {
+          if (!isExist) {
+            this.deletePhotoItem(item);
+          }
+        });
+      });
+    },
+    deletePhotoItem(photoItem) {
+      const {id} = photoItem;
+      this.$db.remove({scheme: 'photoList', album: this.data.currentAlbum.id, id}, {}, () => {
+        this.data.photoList.splice(this.data.photoList.indexOf(photoItem), 1);
+        this.$Message.success(`删除成功！`);
       });
     },
     deleteAlbumItem(albumItem) {
@@ -699,6 +747,12 @@ export default {
         this.selectAlbumItem(album);
       });
     }
+    this.$electron.ipcRenderer.on('selectedDirectory', (event, directoryPath) => {
+      this.form.createAlbumItem.directoryPath = directoryPath[0];
+    });
+    // TODO to delete
+    // console.log(this.$electron.remote.app.getPath('pictures'));
+    // console.log(this.$fs.readdirSync());
   },
   watch: {
     'params.keyword'(keyword) {
