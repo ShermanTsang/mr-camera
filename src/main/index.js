@@ -1,58 +1,58 @@
-'use strict';
+'use strict'
 
-import {app, Menu, ipcMain, BrowserWindow, screen, Tray, dialog} from 'electron';
-import path from 'path';
+import {app, Menu, ipcMain, BrowserWindow, screen, Tray, dialog} from 'electron'
+import path from 'path'
 
 if (process.env.NODE_ENV !== 'development') {
-  global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\');
+  global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\')
 }
 
-let mainWindow;
-let childWindow;
-let tray = null;
+let mainWindow
+let childWindow
+let tray = null
 
 const winURL = process.env.NODE_ENV === 'development'
   ? `http://localhost:9080`
-  : `file://${__dirname}/index.html`;
+  : `file://${__dirname}/index.html`
 
 app.on('ready', () => {
-  const {width, height} = screen.getPrimaryDisplay().workAreaSize;
-  createMainWindow(width - 300, height - 100);
-  registerIPC();
-  registerTray();
-});
+  const {width, height} = screen.getPrimaryDisplay().workAreaSize
+  createMainWindow(width - 300, height - 100)
+  registerIPC()
+  registerTray()
+})
 app.on('quit', () => {
   if (process.platform !== 'darwin') {
-    app.quit();
+    app.quit()
   }
-});
+})
 app.on('activate', () => {
   if (mainWindow === null) {
-    createMainWindow();
+    createMainWindow()
   }
-});
+})
 
 const registerIPC = function() {
-  ipcMain.on('min', event => mainWindow.minimize());
+  ipcMain.on('min', event => mainWindow.minimize())
   ipcMain.on('max', event => {
     if (mainWindow.isMaximized()) {
-      mainWindow.unmaximize();
+      mainWindow.unmaximize()
     } else {
-      mainWindow.maximize();
+      mainWindow.maximize()
     }
-  });
+  })
   ipcMain.on('pin', event => {
     if (mainWindow.isAlwaysOnTop()) {
-
+      mainWindow.setAlwaysOnTop(false)
     } else {
-      mainWindow.setAlwaysOnTop(1);
+      mainWindow.setAlwaysOnTop(true)
     }
-  });
-  ipcMain.on('close', event => mainWindow.close());
+  })
+  ipcMain.on('close', event => mainWindow.close())
   ipcMain.on('createWebWindow', (e, url, title) => {
-    const {width, height} = screen.getPrimaryDisplay().workAreaSize;
-    createWebWindow(width - 400, height - 200, url, title);
-  });
+    const {width, height} = screen.getPrimaryDisplay().workAreaSize
+    createWebWindow(width - 400, height - 200, url, title)
+  })
   ipcMain.on('openDirectoryDialog', event => {
     dialog.showOpenDialog({
       defaultPath: app.getPath('pictures'),
@@ -61,37 +61,31 @@ const registerIPC = function() {
       ]
     }, (directoryPath) => {
       if (directoryPath) {
-        event.sender.send('selectedDirectory', directoryPath);
+        event.sender.send('selectedDirectory', directoryPath)
       }
-    });
-  });
-};
+    })
+  })
+}
 
 const registerTray = function() {
-  const trayIcon = path.join(__dirname, '/resource/icon.ico');
-  tray = new Tray(trayIcon);
+  const trayIcon = path.join(__dirname, '/resource/icon.ico')
+  tray = new Tray(trayIcon)
   const contextMenu = Menu.buildFromTemplate([
     {
       label: '退出应用',
       click: () => {
         if (process.platform !== 'darwin') {
-          app.quit();
+          app.quit()
         }
       }
-    },
-    {
-      label: '移除图标',
-      click: () => {
-        tray.destroy();
-      }
     }
-  ]);
-  tray.setToolTip('相机先生 Mr.Camera');
-  tray.setContextMenu(contextMenu);
-};
+  ])
+  tray.setToolTip('相机先生 Mr.Camera')
+  tray.setContextMenu(contextMenu)
+}
 
 function createMainWindow(width = 980, height = 680) {
-  Menu.setApplicationMenu(null);
+  Menu.setApplicationMenu(null)
   mainWindow = new BrowserWindow({
     width,
     height,
@@ -106,19 +100,19 @@ function createMainWindow(width = 980, height = 680) {
     webPreferences: {
       webSecurity: false
     }
-  });
-  mainWindow.loadURL(winURL);
+  })
+  mainWindow.loadURL(winURL)
   mainWindow.on('closed', () => {
-    mainWindow = null;
-  });
+    mainWindow = null
+  })
   mainWindow.on('ready-to-show', () => {
-    mainWindow.show();
-    mainWindow.focus();
-  });
+    mainWindow.show()
+    mainWindow.focus()
+  })
 }
 
 function createWebWindow(width = 980, height = 680, url, title = 'Mr Camera') {
-  Menu.setApplicationMenu(null);
+  Menu.setApplicationMenu(null)
   childWindow = new BrowserWindow({
     width,
     height,
@@ -131,11 +125,11 @@ function createWebWindow(width = 980, height = 680, url, title = 'Mr Camera') {
     webPreferences: {
       webSecurity: false
     }
-  });
-  childWindow.loadURL(url);
+  })
+  childWindow.loadURL(url)
   childWindow.on('closed', () => {
-    childWindow = null;
-  });
+    childWindow = null
+  })
 }
 
 /**

@@ -4,7 +4,7 @@
         flex-flow: row nowrap;
         height: 100%;
 
-        .album-left {
+        &-left {
             flex: 0 0 300px;
             height: 100%;
             border-right: 1px solid #eee;
@@ -84,12 +84,9 @@
                 }
             }
 
-            &:hover {
-                box-shadow: 2px 0 8px rgba(0, 0, 0, .2);
-            }
         }
 
-        .album-right {
+        &-right {
             flex-grow: 1;
             position: relative;
 
@@ -257,7 +254,7 @@
             }
         }
 
-        .album-tool {
+        &-tool {
             display: flex;
             flex-flow: row nowrap;
             position: fixed;
@@ -285,6 +282,12 @@
                     width: 80px;
                     background-size: cover !important;
                     background-position: center !important;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
 
                 &-info {
@@ -320,7 +323,7 @@
             }
         }
 
-        .tag{
+        .tag {
             cursor: default;
             font-size: .9rem;
             padding: 4px 10px;
@@ -338,7 +341,7 @@
                 相册
                 <div slot="right">
                     <div class="album-create-btn" @click="createAlbumItem()">
-                        <Icon type="ios-add"/>
+                        <Icon type="ios-add" />
                         新建
                     </div>
                 </div>
@@ -347,7 +350,7 @@
             <div class="album-list scrollable">
                 <div v-if="data.albumList.length === 0 && params.keyword === ''" class="album-item album-item-create"
                      @click="createAlbumItem()">
-                    <Icon type="md-add" size="24"/>
+                    <Icon type="md-add" size="24" />
                     创建第一个相册
                 </div>
                 <Spin v-if="status.loadingAlbumList"></Spin>
@@ -355,7 +358,7 @@
                     <div class="album-item" :class="{'album-item-active':data.currentAlbum.id === item.id}"
                          v-for="item in data.albumList" :key="item.id" @click="selectAlbumItem(item)">
                         <div class="album-item-name">
-                            <Icon type="ios-lock-outline" v-show="item.password" size="20"/>
+                            <Icon type="ios-lock-outline" v-show="item.password" size="20" />
                             {{item.name}}
                         </div>
                         <div class="album-item-info">
@@ -368,18 +371,18 @@
         <div class="album-right">
             <template v-if="!data.currentAlbum.id">
                 <div class="album-tip">
-                    <Icon type="md-images" size="60"/>
+                    <Icon type="md-images" size="60" color="#999" />
                     <br>
                     请从左侧选择相册
                 </div>
             </template>
             <template v-else-if="form.checkAlbumPassword.password !== data.currentAlbum.password">
                 <div class="album-tip">
-                    <Icon type="ios-lock-outline" size="60"/>
+                    <Icon type="ios-lock-outline" size="60" />
                     <br>
                     {{data.currentAlbum.name}}
                     <br>
-                    <input placeholder="请输入相册密码" v-model="form.checkAlbumPassword.password" type="password"/>
+                    <input placeholder="请输入相册密码" v-model="form.checkAlbumPassword.password" type="password" />
                 </div>
             </template>
             <template v-else>
@@ -390,23 +393,23 @@
                     <div class="album-page">
                         <Page :current.sync="params.page.current" :total="params.page.total"
                               :page-size="params.page.pageSize" simple show-sizer
-                              @on-change="queryPhotoList"/>
+                              @on-change="queryPhotoList" />
                     </div>
                     <action-button-container v-if="form.checkAlbumPassword.password === data.currentAlbum.password">
                         <action-button-item @click="redirectPage('workspace')">
-                            <Icon type="ios-camera-outline" size="28" color="#999"/>
+                            <Icon type="ios-camera-outline" size="28" color="#999" />
                             开始拍照
                         </action-button-item>
                         <action-button-item @click="syncWithLocal(data.currentAlbum)">
-                            <Icon type="ios-build-outline" size="28" color="#999"/>
+                            <Icon type="ios-sync" size="28" color="#999" />
                             与本地同步
                         </action-button-item>
                         <action-button-item @click="editAlbumItem(data.currentAlbum)">
-                            <Icon type="ios-build-outline" size="28" color="#999"/>
+                            <Icon type="ios-build-outline" size="28" color="#999" />
                             设置
                         </action-button-item>
                         <action-button-item @click="deleteAlbumItem(data.currentAlbum)">
-                            <Icon type="ios-trash-outline" size="28" color="#999"/>
+                            <Icon type="ios-trash-outline" size="28" color="#999" />
                             删除
                         </action-button-item>
                     </action-button-container>
@@ -423,13 +426,14 @@
                                 <img :src="item.path">
                             </div>
                             <div class="photo-item-main-action">
-                                <Icon size="26" type="md-trash" @click="deletePhotoItem(item)"/>
-                                <Icon size="26" type="md-star" @click="collectPhotoItem(item)"/>
-                                <Icon size="26" type="md-download" @click="downloadPhotoItem(item)"/>
+                                <Icon size="26" type="md-trash" @click="deletePhotoItem(item)" />
+                                <Icon size="26" type="md-star" @click="collectPhotoItem(item)" />
+                                <Icon size="26" type="md-download" @click="downloadPhotoItem(item)" />
                             </div>
                         </div>
                         <div class="photo-item-name">
-                            <Input @on-focus="data.oldPhotoName = item.name" @on-blur="modifyPhotoItemName" v-model="item.name" :placeholder="`未命名`"/>
+                            <Input @on-focus="data.oldPhotoName = item.name" @on-blur="modifyPhotoItemName"
+                                   v-model="item.name" :placeholder="`未命名`" />
                         </div>
                     </div>
                 </div>
@@ -439,12 +443,7 @@
             <div class="album-tool-select">
                 <template v-if="data.currentPhoto.id">
                     <div class="album-tool-select-photo" :style="{background:'url('+data.currentPhoto.path+')'}">
-                        <Poptip trigger="hover" :transfer="true" style="width: 100%;height: 100%;">
-                            <div slot="content">
-                                <img :src="data.currentPhoto.path"
-                                     :style="{minHeight: '200px',maxHeight: '300px',boxShadow: '0 0 10px rgba(0,0,0,.2)',borderRadius: '4px'}">
-                            </div>
-                        </Poptip>
+                        <img :src="data.currentPhoto.path">
                     </div>
                     <div class="album-tool-select-info">
                         <div class="album-tool-select-info-name">{{data.currentPhoto.name || `未命名
@@ -544,57 +543,57 @@ export default {
         }
       },
       timer: null
-    };
+    }
   },
   methods: {
     selectAlbumItem(albumItem) {
-      this.clearLastAlbumItem();
-      this.data.currentAlbum = albumItem;
-      this.queryPhotoList();
-      this.params.page.current = 1;
+      this.clearLastAlbumItem()
+      this.data.currentAlbum = albumItem
+      this.queryPhotoList()
+      this.params.page.current = 1
     },
     selectPhotoItem(photoItem) {
-      this.data.currentPhoto = photoItem;
+      this.data.currentPhoto = photoItem
     },
     clearLastAlbumItem() {
-      this.form.checkAlbumPassword.password = '';
-      this.data.currentPhoto = {};
-      this.data.photoList = [];
+      this.form.checkAlbumPassword.password = ''
+      this.data.currentPhoto = {}
+      this.data.photoList = []
     },
     createAlbumItem() {
-      this.status.createAlbumItem = true;
+      this.status.createAlbumItem = true
     },
     editAlbumItem(albumItem) {
-      this.form.editAlbumItem = albumItem;
-      this.status.editAlbumItem = true;
+      this.form.editAlbumItem = albumItem
+      this.status.editAlbumItem = true
     },
     formatSepText(val) {
-      return '图片缩略图尺寸: ' + val + '像素';
+      return '图片缩略图尺寸: ' + val + '像素'
     },
     collectPhotoItem(photoItem) {
-      const {id} = photoItem;
+      const {id} = photoItem
       this.$db.update({
         scheme: 'photoList',
         album: this.data.currentAlbum.id,
         id
       }, {$set: {isCollected: true}}, {}, (err, count) => {
         if (err) {
-          console.log(err);
+          console.log(err)
         }
-        this.$Message.success(`收藏成功！`);
-      });
+        this.$Message.success(`收藏成功！`)
+      })
     },
     downloadPhotoItem(photoItem) {
-      const {id, photo, name} = photoItem;
-      let saveLink = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
-      saveLink.href = photo;
-      saveLink.download = name === '' ? `未命名${id}` : name;
-      let event = document.createEvent('MouseEvents');
-      event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-      saveLink.dispatchEvent(event);
+      const {id, photo, name} = photoItem
+      let saveLink = document.createElementNS('http://www.w3.org/1999/xhtml', 'a')
+      saveLink.href = photo
+      saveLink.download = name === '' ? `未命名${id}` : name
+      let event = document.createEvent('MouseEvents')
+      event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
+      saveLink.dispatchEvent(event)
     },
     submitCreateAlbumItem() {
-      const {name, description, password, directoryPath} = this.form.createAlbumItem;
+      const {name, description, password, directoryPath} = this.form.createAlbumItem
       const newAlbumItem = {
         scheme: 'albumList',
         id: this.$getId().toString(),
@@ -602,165 +601,181 @@ export default {
         description,
         password,
         directoryPath
-      };
+      }
       this.$db.insert(newAlbumItem, () => {
-        this.status.createAlbumItem = false;
-        this.$Message.success(`新建相册"${name}"成功`);
-        this.queryAlbumList();
-      });
+        this.status.createAlbumItem = false
+        this.$Message.success(`新建相册"${name}"成功`)
+        this.queryAlbumList()
+      })
     },
     submitEditAlbumItem() {
-      const {id, name, description, password} = this.form.editAlbumItem;
+      const {id, name, description, password} = this.form.editAlbumItem
       this.$db.update({scheme: 'albumList', id}, {
         $set: {name, description, password}
       }, {}, () => {
-        this.status.editAlbumItem = false;
-        this.status.actionMenu = false;
-        this.$Message.success(`相册"${name}"编辑成功`);
-        this.queryAlbumList();
-      });
+        this.status.editAlbumItem = false
+        this.status.actionMenu = false
+        this.$Message.success(`相册"${name}"编辑成功`)
+        this.queryAlbumList()
+      })
     },
     redirectPage(pageName) {
-      this.$router.push({name: pageName, params: {albumItem: this.data.currentAlbum}});
+      this.$router.push({name: pageName, params: {albumItem: this.data.currentAlbum}})
     },
     queryAlbumList() {
-      this.status.loadingAlbumList = true;
-      const {keyword} = this.params;
-      const regex = new RegExp(keyword);
+      this.status.loadingAlbumList = true
+      const {keyword} = this.params
+      const regex = new RegExp(keyword)
       this.$db.find({scheme: 'albumList', name: {$regex: regex}}, (err, albums) => {
         if (err) {
-          console.log(err);
+          console.log(err)
         }
-        this.data.albumList = albums || [];
-        this.status.loadingAlbumList = false;
-      });
+        this.data.albumList = albums || []
+        this.status.loadingAlbumList = false
+      })
     },
     queryPhotoList() {
-      this.status.loadingPhotoList = true;
-      const {current, pageSize} = this.params.page;
-      const {id} = this.data.currentAlbum;
-      const skipNum = (current - 1) * pageSize;
+      this.status.loadingPhotoList = true
+      const {current, pageSize} = this.params.page
+      const {id} = this.data.currentAlbum
+      const skipNum = (current - 1) * pageSize
       this.$db.count({scheme: 'photoList', album: id}, (err, count) => {
         if (err) {
-          console.log(err);
+          console.log(err)
         }
-        this.data.currentAlbum.total = this.params.page.total = count;
-      });
+        this.data.currentAlbum.total = this.params.page.total = count
+      })
       this.$db.find({
         scheme: 'photoList',
         album: id
       }).sort({time: -1}).skip(skipNum).limit(pageSize).exec((err, docs) => {
         if (err) {
-          console.log(err);
+          console.log(err)
         }
-        this.data.photoList = docs;
-        this.status.loadingPhotoList = false;
-      });
+        this.data.photoList = docs
+        this.status.loadingPhotoList = false
+      })
     },
     getValidFileName(name) {
-      const {id, format} = this.data.currentPhoto;
-      const regex = /[<>:'|*？/\\]/g;
-      const validName = this.data.currentPhoto.name = name.replace(regex, '').trim();
-      const testPath = this.$path.join(this.data.currentAlbum.directoryPath, `${validName}.${format}`);
+      const {id, format} = this.data.currentPhoto
+      const regex = /[<>:'|*？/\\]/g
+      const validName = this.data.currentPhoto.name = name.replace(regex, '').trim()
+      const testPath = this.$path.join(this.data.currentAlbum.directoryPath, `${validName}.${format}`)
       if (regex.test(name)) {
-        this.$Message.warning('文件名不能包含非法字符！已自动去除。');
+        this.$Message.warning('文件名不能包含非法字符！已自动去除。')
       }
       if (this.$fs.existsSync(testPath)) {
-        this.$Message.warning('文件名不能重复！已自动处理。');
-        const uniqueName = `${validName} - ${id}`;
-        this.data.currentPhoto.name = uniqueName;
-        return uniqueName;
+        this.$Message.warning('文件名不能重复！已自动处理。')
+        const uniqueName = `${validName} - ${id}`
+        this.data.currentPhoto.name = uniqueName
+        return uniqueName
       }
-      return validName;
+      return validName
     },
     modifyPhotoItemName() {
-      if (this.data.oldPhotoName === this.data.currentPhoto.name) { return false; }
-      const {id, name, album, path, format} = this.data.currentPhoto;
-      const newName = this.getValidFileName(name);
-      const newPath = this.$path.join(this.$path.dirname(path), `${newName}.${format}`);
+      if (this.data.oldPhotoName === this.data.currentPhoto.name) {
+        return false
+      }
+      const {id, name, album, path, format} = this.data.currentPhoto
+      const newName = this.getValidFileName(name)
+      const newPath = this.$path.join(this.$path.dirname(path), `${newName}.${format}`)
       this.$db.update({
         scheme: 'photoList',
         album,
         id
       }, {$set: {name: newName, path: newPath}}, {}, (err, docs) => {
         if (err) {
-          console.log(err);
+          console.log(err)
         }
         this.$fs.rename(path, newPath, (err) => {
           if (err) {
-            console.log(err);
+            console.log(err)
           }
-          this.$set(this.data.currentPhoto, 'path', newPath);
-        });
-      });
+          this.$set(this.data.currentPhoto, 'path', newPath)
+        })
+      })
     },
     syncWithLocal() {
       this.data.photoList.map((item) => {
         this.$fs.exists(item.path, (isExist) => {
           if (!isExist) {
-            this.deletePhotoItem(item);
+            this.deletePhotoItem(item)
           }
-        });
-      });
+        })
+      })
     },
     deletePhotoItem(photoItem) {
-      const {id} = photoItem;
+      const {id} = photoItem
       this.$db.remove({scheme: 'photoList', album: this.data.currentAlbum.id, id}, {}, () => {
-        this.data.photoList.splice(this.data.photoList.indexOf(photoItem), 1);
-        this.$Message.success(`删除成功！`);
-      });
+        this.data.photoList.splice(this.data.photoList.indexOf(photoItem), 1)
+        this.$Message.success(`删除成功！`)
+      })
     },
     deleteAlbumItem(albumItem) {
-      const {id, name} = albumItem;
+      const {id, name} = albumItem
       this.$Modal.confirm({
         title: `确认删相册"${name}"？`,
         content: '相册中的所有图片也将被删除。',
         onOk: () => {
           this.$db.remove({scheme: 'albumList', id}, {}, () => {
+            this.$db.find({scheme: 'photoList', album: id}, {}).exec((err, docs) => {
+              if (err) {
+                console.log(err)
+              }
+              docs.forEach(photoItem => {
+                this.$fs.unlink(photoItem.path, function(error) {
+                  if (error) {
+                    console.log(error)
+                    return false
+                  }
+                  console.log('删除文件成功')
+                })
+              })
+            })
             this.$db.remove({scheme: 'photoList', album: id}, {multi: true}, (err) => {
               if (err) {
-                console.log(err);
+                console.log(err)
               }
-              this.data.albumList.splice(this.data.albumList.indexOf(albumItem), 1);
-              this.$Message.success(`相册"${name}"删除成功！`);
-              this.status.actionMenu = false;
-            });
-          });
+              this.data.albumList.splice(this.data.albumList.indexOf(albumItem), 1)
+              this.$Message.success(`相册"${name}"删除成功！`)
+              this.status.actionMenu = false
+            })
+          })
         },
         onCancel: () => {
-          this.$Message.info('已取消删除相册');
+          this.$Message.info('已取消删除相册')
         }
-      });
+      })
     },
     searchByAlbumName(keyword) {
-      this.params.keyword = keyword;
-      this.queryAlbumList();
+      this.params.keyword = keyword
+      this.queryAlbumList()
     }
   },
   mounted() {
-    this.queryAlbumList();
+    this.queryAlbumList()
     if (this.$route.query.hasOwnProperty('albumId')) {
       this.$db.findOne({scheme: 'albumList', id: this.$route.query.albumId}, (err, album) => {
         if (err) {
-          console.log(err);
+          console.log(err)
         }
-        this.selectAlbumItem(album);
-      });
+        this.selectAlbumItem(album)
+      })
     }
     this.$electron.ipcRenderer.on('selectedDirectory', (event, directoryPath) => {
-      this.form.createAlbumItem.directoryPath = directoryPath[0];
-    });
+      this.form.createAlbumItem.directoryPath = directoryPath[0]
+    })
     // TODO to delete
     // console.log(this.$electron.remote.app.getPath('pictures'));
     // console.log(this.$fs.readdirSync());
   },
   watch: {
     'params.keyword'(keyword) {
-      clearTimeout(this.timer);
+      clearTimeout(this.timer)
       this.timer = setTimeout(() => {
-        this.searchByAlbumName(keyword);
-      }, 800);
+        this.searchByAlbumName(keyword)
+      }, 800)
     }
   }
-};
+}
 </script>

@@ -56,8 +56,8 @@ export default {
   name: 'action-button-item',
   methods: {
     click() {
-      this.$emit('click');
+      this.$emit('click')
     }
   }
-};
+}
 </script>

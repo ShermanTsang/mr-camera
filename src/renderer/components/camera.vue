@@ -236,59 +236,59 @@ export default {
         capture: null,
         result: null
       }
-    };
+    }
   },
   methods: {
     clickTakePhotoBtn() {
-      this.clearCamera();
+      this.clearCamera()
       if (!this.selectedItem.id) {
-        this.$emit('add-default-item');
+        this.$emit('add-default-item')
       }
-      const {countdown} = this.config;
-      this.status.countdown = countdown;
-      this.$emit('click-take-photo-btn');
+      const {countdown} = this.config
+      this.status.countdown = countdown
+      this.$emit('click-take-photo-btn')
     },
     runCamera() {
-      const {mode, countdown} = this.config;
+      const {mode, countdown} = this.config
       if (countdown > 0) {
-        this.countdownSecond();
+        this.countdownSecond()
       }
       setTimeout(() => {
-        this.captureCamera();
+        this.captureCamera()
         if (mode === 'cropper' || mode === 'preview') {
-          this.status.workPanel = true;
+          this.status.workPanel = true
         } else if (mode === 'direct') {
-          this.confirmResult();
+          this.confirmResult()
         }
-      }, countdown > 0 ? countdown * 1000 : 0);
+      }, countdown > 0 ? countdown * 1000 : 0)
     },
     captureCamera() {
-      const {videoContainerWidth, videoContainerHeight} = this.camera;
-      const videoContent = document.getElementById('camera-video');
-      const canvasOrigin = document.getElementById('camera-origin-canvas');
-      const contextOrigin = canvasOrigin.getContext('2d');
-      canvasOrigin.width = videoContainerWidth;
-      canvasOrigin.height = videoContainerHeight;
-      contextOrigin.drawImage(videoContent, 0, 0, videoContainerWidth, videoContainerHeight);
-      this.photo.capture = canvasOrigin.toDataURL(`image/${this.config.format}`);
+      const {videoContainerWidth, videoContainerHeight} = this.camera
+      const videoContent = document.getElementById('camera-video')
+      const canvasOrigin = document.getElementById('camera-origin-canvas')
+      const contextOrigin = canvasOrigin.getContext('2d')
+      canvasOrigin.width = videoContainerWidth
+      canvasOrigin.height = videoContainerHeight
+      contextOrigin.drawImage(videoContent, 0, 0, videoContainerWidth, videoContainerHeight)
+      this.photo.capture = canvasOrigin.toDataURL(`image/${this.config.format}`)
       if (this.config.mode !== 'cropper') {
         setTimeout(() => {
-          this.photo.result = canvasOrigin.toDataURL(`image/${this.config.format}`);
-          this.status.step = 'confirm';
-        }, 200);
+          this.photo.result = canvasOrigin.toDataURL(`image/${this.config.format}`)
+          this.status.step = 'confirm'
+        }, 200)
       }
     },
     captureCropper() {
       this.$refs.cropper.getCropData((data) => {
-        this.photo.result = data;
-      });
-      this.status.step = 'confirm';
+        this.photo.result = data
+      })
+      this.status.step = 'confirm'
     },
     confirmResult() {
-      const {scheme, album, id, name, path} = this.selectedItem;
+      const {scheme, album, id, name, path} = this.selectedItem
       setTimeout(() => {
-        let img = new Image();
-        img.src = this.photo.result;
+        let img = new Image()
+        img.src = this.photo.result
         img.onload = () => {
           const result = {
             scheme,
@@ -303,59 +303,59 @@ export default {
             shotStatus: 1,
             saveStatus: 0,
             updateStatus: this.isOverwritten ? 1 : 0,
-            time: this.$moment().format('YYYY-MM-DD HH:mm:ss'),
+            time: this.$time().format('YYYY-MM-DD HH:mm:ss'),
             size: this.base64Length(this.config.mode === 'cropper' ? this.photo.result : this.photo.capture)
-          };
-          this.$emit('confirm', result);
-        };
-      }, 300);
+          }
+          this.$emit('confirm', result)
+        }
+      }, 300)
     },
     clearCamera() {
-      this.photo.capture = null;
-      this.photo.result = null;
-      this.status.step = 'cropper';
-      this.status.isOverwritten = false;
-      clearInterval(this.status.timer);
+      this.photo.capture = null
+      this.photo.result = null
+      this.status.step = 'cropper'
+      this.status.isOverwritten = false
+      clearInterval(this.status.timer)
     },
     redoCopper() {
-      this.photo.result = null;
-      this.status.step = 'cropper';
+      this.photo.result = null
+      this.status.step = 'cropper'
     },
     download(option) {
-      let downloadImage = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
-      let imageBlob = this.base64ToBlob(option === 'capturePhoto' ? this.photo.capture : this.photo.result);
-      downloadImage.href = URL.createObjectURL(imageBlob);
-      downloadImage.download = `${Date.now().toString(36)}`;
-      let event = document.createEvent('MouseEvents');
-      event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-      downloadImage.dispatchEvent(event, {bubbles: true, cancelable: true, view: window});
+      let downloadImage = document.createElementNS('http://www.w3.org/1999/xhtml', 'a')
+      let imageBlob = this.base64ToBlob(option === 'capturePhoto' ? this.photo.capture : this.photo.result)
+      downloadImage.href = URL.createObjectURL(imageBlob)
+      downloadImage.download = `${Date.now().toString(36)}`
+      let event = document.createEvent('MouseEvents')
+      event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
+      downloadImage.dispatchEvent(event, {bubbles: true, cancelable: true, view: window})
     },
     base64ToBlob(base64Str) {
-      let parts = base64Str.split(';base64,');
-      let contentType = parts[0].split(':')[1];
-      let raw = window.atob(parts[1]);
-      let rawLength = raw.length;
-      let uInt8Array = new Uint8Array(rawLength);
+      let parts = base64Str.split(';base64,')
+      let contentType = parts[0].split(':')[1]
+      let raw = window.atob(parts[1])
+      let rawLength = raw.length
+      let uInt8Array = new Uint8Array(rawLength)
       for (let i = 0; i < rawLength; ++i) {
-        uInt8Array[i] = raw.charCodeAt(i);
+        uInt8Array[i] = raw.charCodeAt(i)
       }
-      return new Blob([uInt8Array], {type: contentType});
+      return new Blob([uInt8Array], {type: contentType})
     },
     base64Length(base64Str) {
-      let str = base64Str.split(',')[1];
-      let equalIndex = str.indexOf('=');
+      let str = base64Str.split(',')[1]
+      let equalIndex = str.indexOf('=')
       if (str.indexOf('=') > 0) {
-        str = str.substring(0, equalIndex);
+        str = str.substring(0, equalIndex)
       }
-      let strLength = str.length;
-      return parseInt(strLength - (strLength / 8) * 2);
+      let strLength = str.length
+      return parseInt(strLength - (strLength / 8) * 2)
     },
     countdownSecond() {
       this.status.timer = setInterval(() => {
         if (this.status.countdown > 0) {
-          this.status.countdown--;
+          this.status.countdown--
         }
-      }, 1000);
+      }, 1000)
     },
     startCamera() {
       if (navigator.getUserMedia) {
@@ -365,35 +365,35 @@ export default {
             height: this.camera.videoHeight
           }
         }).then(stream => {
-          this.camera.mediaStreamTrack = stream;
-          const video = document.getElementById('camera-video');
-          video.src = (window.URL || window.webkitURL).createObjectURL(stream);
-          video.play();
+          this.camera.mediaStreamTrack = stream
+          const video = document.getElementById('camera-video')
+          video.src = (window.URL || window.webkitURL).createObjectURL(stream)
+          video.play()
         }).catch(err => {
-          console.log(err);
-        });
+          console.log(err)
+        })
       } else {
-        alert('没有监测到您的相机哟');
+        alert('没有监测到您的相机哟')
       }
     },
     stopCamera() {
       this.camera.mediaStreamTrack.getTracks().forEach(track => {
-        track.stop();
-      });
+        track.stop()
+      })
     }
   },
   mounted() {
-    this.startCamera();
+    this.startCamera()
   },
   beforeDestroy() {
-    this.stopCamera();
+    this.stopCamera()
   },
   watch: {
     'status.workPanel'(status) {
       if (status === false) {
-        this.clearCamera();
+        this.clearCamera()
       }
     }
   }
-};
+}
 </script>

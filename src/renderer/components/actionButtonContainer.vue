@@ -16,5 +16,5 @@
 <script>
 export default {
   name: 'action-button-container'
-};
+}
 </script>

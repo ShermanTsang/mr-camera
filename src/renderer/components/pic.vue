@@ -42,50 +42,50 @@ export default {
   data() {
     return {
       image: ''
-    };
+    }
   },
   mounted() {
-    this.image = this.getImage();
+    this.image = this.getImage()
   },
   watch: {
     url(value) {
-      this.image = value;
+      this.image = value
     }
   },
   methods: {
     getImage() {
-      const url = this.url || '';
-      const src = this.src || '';
+      const url = this.url || ''
+      const src = this.src || ''
       if (url) {
         if (url.indexOf('://') > -1) {
-          return url;
+          return url
         }
         // return this.Api.Resource.baseUrl + url;
       }
       if (src) {
         try {
-          return require('../assets/images/' + src);
+          return require('../assets/images/' + src)
         } catch (e) {
-          console.log('Image resource \'' + src + '\' is not found !');
-          return require('../assets/images/imagePlaceholder.png');
+          console.log('Image resource \'' + src + '\' is not found !')
+          return require('../assets/images/imagePlaceholder.png')
         }
       }
     },
     handleClick() {
-      this.$emit('click');
+      this.$emit('click')
       if (this.showLarge !== undefined) {
-        this.showLargeViaModal();
+        this.showLargeViaModal()
       }
     },
     imageError() {
-      this.image = require('../assets/images/imagePlaceholder.png');
+      this.image = require('../assets/images/imagePlaceholder.png')
     },
     downloadImage() {
-      const downloadTarget = document.createElement('a');
-      downloadTarget.href = this.url;
-      downloadTarget.target = '_blank';
-      downloadTarget.download = `图片(${Date.now().toString(36)}) - 相机先生`;
-      downloadTarget.click();
+      const downloadTarget = document.createElement('a')
+      downloadTarget.href = this.url
+      downloadTarget.target = '_blank'
+      downloadTarget.download = `图片(${Date.now().toString(36)}) - 相机先生`
+      downloadTarget.click()
     },
     showLargeViaModal() {
       this.$Modal.confirm({
@@ -94,7 +94,7 @@ export default {
         okText: '保存到本地',
         width: 800,
         onOk: () => {
-          this.downloadImage();
+          this.downloadImage()
         },
         closable: true,
         render: (h) => {
@@ -117,10 +117,10 @@ export default {
                 margin: '10px auto'
               }
             }, '按Esc键可快速关闭')
-          ];
+          ]
         }
-      });
+      })
     }
   }
-};
+}
 </script>

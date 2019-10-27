@@ -59,19 +59,19 @@ export default {
         innerHeight: 0,
         innerWidth: 0
       }
-    };
+    }
   },
   mounted() {
-    this.route = this.$route;
+    this.route = this.$route
     this.$Message.config({
       top: 100,
       duration: 3
-    });
-    this.config.innerWidth = window.innerWidth;
-    this.config.innerHeight = window.innerHeight;
+    })
+    this.config.innerWidth = window.innerWidth
+    this.config.innerHeight = window.innerHeight
   },
   updated() {
-    this.route = this.$route;
+    this.route = this.$route
   }
-};
+}
 </script>

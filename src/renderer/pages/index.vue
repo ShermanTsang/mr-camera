@@ -164,54 +164,54 @@ export default {
           {id: 4, text: ''}
         ]
       }
-    };
+    }
   },
   methods: {
     close() {
-      this.$electron.remote.app.exit();
+      this.$electron.remote.app.exit()
     },
     enter() {
-      this.$router.push({name: 'home'});
+      this.$router.push({name: 'home'})
     },
     checkCamera() {
       navigator.getUserMedia = navigator.getUserMedia ||
           navigator.webkitGetUserMedia ||
           navigator.mozGetUserMedia ||
-          navigator.msGetUserMedia;
+          navigator.msGetUserMedia
       if (navigator.getUserMedia) {
-        this.status.isCameraReady = true;
-        console.log(navigator.mediaDevices);
+        this.status.isCameraReady = true
+        console.log(navigator.mediaDevices)
       } else {
-        this.status.isCameraReady = false;
+        this.status.isCameraReady = false
       }
     },
     getSlideImage() {
-      return `slide${this.status.slideNumber}.jpg`;
+      return `slide${this.status.slideNumber}.jpg`
     },
     switchSlide() {
       setInterval(() => {
-        this.status.slideNumber = this.status.slideNumber === this.data.slide.length ? 1 : this.status.slideNumber + 1;
-      }, 3000);
+        this.status.slideNumber = this.status.slideNumber === this.data.slide.length ? 1 : this.status.slideNumber + 1
+      }, 3000)
     },
     queryStatics() {
       this.$db.count({scheme: 'photoList'}, (err, count) => {
         if (err) {
-          console.log(err);
+          console.log(err)
         }
-        this.data.photoAmount = count;
-      });
+        this.data.photoAmount = count
+      })
       this.$db.count({scheme: 'albumList'}, (err, count) => {
         if (err) {
-          console.log(err);
+          console.log(err)
         }
-        this.data.albumAmount = count;
-      });
+        this.data.albumAmount = count
+      })
     }
   },
   mounted() {
-    this.checkCamera();
-    this.switchSlide();
-    this.queryStatics();
+    this.checkCamera()
+    this.switchSlide()
+    this.queryStatics()
   }
-};
+}
 </script>

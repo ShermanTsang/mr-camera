@@ -82,7 +82,7 @@
             </div>
             <div class="header-action">
                 <div class="header-action-item" @click="windowsAction('pin')">
-                    <Icon type="ios-link"/>
+                    <Icon type="ios-arrow-round-up" />
                 </div>
                 <div class="header-action-item" @click="windowsAction('min')">
                     <Icon type="md-remove"/>
@@ -124,15 +124,15 @@
                 </div>
                 <div class="setting-item" @click="emptyAllData()">
                     <div class="setting-item-icon">
-                        <Icon type="ios-trash-outline"/>
+                        <Icon type="ios-close"/>
                     </div>
-                    <div class="setting-item-name">清空数据</div>
+                    <div class="setting-item-name">清空软件数据</div>
                 </div>
                 <div class="setting-item" @click="deleteAllFiles()">
                     <div class="setting-item-icon">
                         <Icon type="ios-trash-outline"/>
                     </div>
-                    <div class="setting-item-name">清空数据</div>
+                    <div class="setting-item-name">删除照片文件</div>
                 </div>
             </div>
         </Modal>
@@ -147,7 +147,7 @@ export default {
       status: {
         setting: false
       }
-    };
+    }
   },
   methods: {
     windowsAction(type) {
@@ -156,57 +156,57 @@ export default {
           title: '确认退出相机先生？',
           content: 'R U confirm to exit Mr.Camera?',
           onOk: () => {
-            this.$electron.ipcRenderer.send('close');
+            this.$electron.ipcRenderer.send('close')
           },
           onCancel: () => {
-            this.$Message.info('已取消退出');
+            this.$Message.info('已取消退出')
           }
-        });
-        return false;
+        })
+        return false
       }
       if (type === 'pin') {
-        this.$electron.ipcRenderer.send('pin');
-        this.$Message.info('窗口已置顶');
-        return false;
+        this.$electron.ipcRenderer.send('pin')
+        this.$Message.info('窗口已置顶')
+        return false
       }
       if (type === 'back') {
-        this.$router.back(-1);
-        return false;
+        this.$router.back(-1)
+        return false
       }
-      this.$electron.ipcRenderer.send(type);
+      this.$electron.ipcRenderer.send(type)
     },
     emptyAllData() {
       this.$Modal.confirm({
         title: '确认清空所有数据吗？',
-        content: '相册和数据文件将全部删除',
+        content: '相册数据文件将全部删除',
         onOk: () => {
           this.$db.remove({}, { multi: true }, (err, numRemoved) => {
             if (err) {
-              console.log(err);
+              console.log(err)
             }
-            this.$Message.success(`${numRemoved}条数据已经全部清空`);
-            this.$router.push({name: 'index'});
-          });
+            this.$Message.success(`${numRemoved}条数据已经全部清空`)
+            this.$router.push({name: 'index'})
+          })
         },
         onCancel: () => {
-          this.$Message.info('已取消清空数据');
+          this.$Message.info('已取消清空数据')
         }
-      });
+      })
     },
     deleteAllFiles() {
       this.$Modal.confirm({
         title: '确认删除所有图片吗？',
         content: '保存在本地的图片将全部删除',
         onOk: () => {
-          this.$router.push({name: 'index'});
+          this.$router.push({name: 'index'})
         },
         onCancel: () => {
-          this.$Message.info('已取消清空数据');
+          this.$Message.info('已取消清空数据')
         }
-      });
+      })
     }
   },
   mounted() {
   }
-};
+}
 </script>

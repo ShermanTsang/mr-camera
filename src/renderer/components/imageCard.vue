@@ -103,16 +103,16 @@ export default {
     return {
       image: '',
       currentName: ''
-    };
+    }
   },
   methods: {
     handleClick() {
       if (this.showLarge !== undefined) {
-        this.showLargeViaModal();
+        this.showLargeViaModal()
       }
     },
     imageError() {
-      this.image = require('../assets/images/imagePlaceholder.png');
+      this.image = require('../assets/images/imagePlaceholder.png')
     },
     showLargeViaModal() {
       this.$Modal.confirm({
@@ -141,21 +141,21 @@ export default {
                 margin: '10px auto'
               }
             }, '按Esc键可快速关闭')
-          ];
+          ]
         }
-      });
+      })
     }
   },
   mounted() {
-    this.currentName = this.name;
+    this.currentName = this.name
   },
   watch: {
     name(value) {
-      this.currentName = value;
+      this.currentName = value
     },
     currentName(value) {
-      this.$emit('update:name', value);
+      this.$emit('update:name', value)
     }
   }
-};
+}
 </script>

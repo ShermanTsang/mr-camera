@@ -31,14 +31,14 @@ export default {
     }
   },
   data() {
-    return {};
+    return {}
   },
   methods: {
     click() {
-      this.$emit('click');
+      this.$emit('click')
     }
   },
   mounted() {
   }
-};
+}
 </script>

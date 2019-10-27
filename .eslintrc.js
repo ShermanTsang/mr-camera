@@ -26,11 +26,8 @@ module.exports = {
       'x-invalid-end-tag': false
     }],
     'no-var': 1,
-    'eqeqeq': 'off',
     'space-before-function-paren': ['error', 'never'],
-    'semi': ['error', 'always'],
     'handle-callback-err': 'warn',
-    // 'semi': 0,
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development

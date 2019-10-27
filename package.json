@@ -1,10 +1,10 @@
 {
   "name": "mr-camera",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "An fast and easy shot tool.",
   "author": {
-    "name": "ShareMan Tsang",
-    "email": "zengxiaoman1996@163.com",
+    "name": "ShareManT",
+    "email": "sharemant@163.com",
     "url": "https://share-man.com"
   },
   "license": "BSD-3-Clause",
@@ -61,11 +61,11 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "dayjs": "^1.8.16",
     "eslint-plugin-vue": "^4.7.1",
-    "iview": "^3.1.1",
     "lodash": "^4.17.11",
-    "moment": "^2.24.0",
     "nedb": "^1.8.0",
+    "view-design": "^4.0.2",
     "vue": "^2.5.16",
     "vue-cropper": "^0.4.4",
     "vue-electron": "^1.0.6",
@@ -116,8 +116,6 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "^0.0.32",
     "karma-webpack": "^3.0.0",
-    "less": "^3.8.1",
-    "less-loader": "^4.1.0",
     "mini-css-extract-plugin": "0.4.0",
     "mocha": "^5.2.0",
     "multispinner": "^0.2.1",
