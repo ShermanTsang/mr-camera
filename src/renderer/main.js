@@ -48,7 +48,7 @@ nextComponents.keys().forEach(fileName => {
 let devInnerHeight = 1080.0
 let devDevicePixelRatio = 1.0
 let devScaleFactor = 1
-let scaleFactor = require('electron').screen.getPrimaryDisplay().scaleFactor
+let scaleFactor = require('electron').remote.screen.getPrimaryDisplay().scaleFactor
 let zoomFactor = (window.innerHeight / devInnerHeight) * (window.devicePixelRatio / devDevicePixelRatio) * (devScaleFactor / scaleFactor)
 require('electron').webFrame.setZoomFactor(zoomFactor)
 

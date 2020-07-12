@@ -104,17 +104,18 @@
                     <div class="setting-item-name">回欢迎页</div>
                 </div>
                 <div class="setting-item"
-                     @click="$electron.ipcRenderer.send('createWebWindow', 'https://share-man.com','相机先生讨论区')">
+                     @click="$electron.ipcRenderer.send('createWebWindow', 'https://support.qq.com/products/176674?','相机先生讨论区')">
                     <div class="setting-item-icon">
                         <Icon type="ios-chatboxes-outline"/>
                     </div>
                     <div class="setting-item-name">社区讨论</div>
                 </div>
-                <div class="setting-item">
+                <div class="setting-item"
+                     @click="$electron.ipcRenderer.send('createWebWindow', 'https://share-man.com/?from-mr.camera','曾小满的盒子')">
                     <div class="setting-item-icon">
                         <Icon type="ios-heart-outline"/>
                     </div>
-                    <div class="setting-item-name">赞助支持</div>
+                    <div class="setting-item-name">开发者网站</div>
                 </div>
                 <div class="setting-item">
                     <div class="setting-item-icon">

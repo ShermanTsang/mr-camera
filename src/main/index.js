@@ -98,7 +98,8 @@ function createMainWindow(width = 980, height = 680) {
     // backgroundColor: '#4e8cfe',
     show: false,
     webPreferences: {
-      webSecurity: false
+      webSecurity: false,
+      nodeIntegration: true // node version above 5 requirement
     }
   })
   mainWindow.loadURL(winURL)
@@ -123,7 +124,8 @@ function createWebWindow(width = 980, height = 680, url, title = 'Mr Camera') {
     useContentSize: true,
     frame: true,
     webPreferences: {
-      webSecurity: false
+      webSecurity: false,
+      nodeIntegration: true // node version above 5 requirement
     }
   })
   childWindow.loadURL(url)
